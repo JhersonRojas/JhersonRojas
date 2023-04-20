@@ -31,8 +31,8 @@
   </a> &nbsp; 
 <p/>
 
-<h3 align="left">Frameworks and Libraries</h3>
-<p align="left">
+<h3 align="center">Frameworks and Libraries</h3>
+<p align="center">
   <a href="https://angular.io" target="_blank" rel="noreferrer">
     <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40" />
   </a> &nbsp; 
@@ -60,8 +60,8 @@
   </a>
 <p/>
 
-<h3 align="right">Another tools</h3>
-<p align="right">
+<h3 align="center">Another tools</h3>
+<p align="center">
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux"
       width="40" height="40" />
@@ -83,7 +83,3 @@
     src="https://github-readme-stats.vercel.app/api/top-langs?username=jhersonrojas&show_icons=true&locale=en&layout=compact"
     alt="jhersonrojas" />
 </p>&nbsp;
-
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jhersonrojas&show_icons=true&locale=en" alt="jhersonrojas" />
-<p/>
