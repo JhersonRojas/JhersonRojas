@@ -9,7 +9,7 @@
   </a>
 </p>
 
-<h3 align="left">Languages and DataBase</h3>
+<h3 align="center">Languages and DataBase</h3>
 <p>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
@@ -60,7 +60,7 @@
   </a>
 <p/>
 
-<h3 align="left">Another tools</h3>
+<h3 align="right">Another tools</h3>
 <p>
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux"
@@ -78,7 +78,7 @@
   </a> 
 <p/>
 
-<p align="center">
+<p align="left">
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs?username=jhersonrojas&show_icons=true&locale=en&layout=compact"
     alt="jhersonrojas" />
