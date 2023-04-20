@@ -42,8 +42,11 @@
     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
       alt="react" width="40" height="40" />
-  </a> &nbsp; 
-    <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
+  </a> &nbsp;
+  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> 
+  </a> &nbsp;
+  <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass"
       width="40" height="40" />
   </a> &nbsp; 
@@ -70,10 +73,17 @@
     <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator"
       width="40" height="40" />
   </a>
+  <a href="https://postman.com" target="_blank" rel="noreferrer"> 
+    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+  </a> 
 <p/>
 
 <p align="center">
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs?username=jhersonrojas&show_icons=true&locale=en&layout=compact"
     alt="jhersonrojas" />
+</p>&nbsp;
+
+<p>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jhersonrojas&show_icons=true&locale=en" alt="jhersonrojas" />
 </p>
