@@ -14,17 +14,17 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
       alt="javascript" width="40" height="40" />
-  </a>
+  </a> &nbsp; 
     <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" />
-  </a>
+  </a> &nbsp; 
     <a href="https://mariadb.org/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40" />
-  </a>
+  </a> &nbsp; 
   <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
       alt="mysql" width="40" height="40" />
-  </a>
+  </a> &nbsp; 
 <p/>
 
 <h3 align="left">Frameworks and Libraries</h3>
