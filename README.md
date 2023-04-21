@@ -3,7 +3,8 @@
 
 <h2 align="left">Connect with me:</h2>
 <p align="left">
-  <a href="https://co.linkedin.com/in/jherson-alejandro-rojas-chamorro-566131253?trk=people-guest_people_search-card" target="blank"><img align="center"
+  <a href="https://co.linkedin.com/in/jherson-alejandro-rojas-chamorro-566131253?trk=people-guest_people_search-card" target="blank">
+    <img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
       alt="jherson alejandro rojas chamorro" height="30" width="40" />
   </a>
@@ -39,9 +40,13 @@
     <a href="https://ionicframework.com" target="_blank" rel="noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" alt="ionic" width="40" height="40" />
   </a> &nbsp; 
-    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
       alt="react" width="40" height="40" />
+  </a> &nbsp;
+  <a href="https://sequelize.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original-wordmark.svg"
+      alt="sequelize" width="40" height="40" />
   </a> &nbsp;
   <a href="https://expressjs.com" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> 
