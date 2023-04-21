@@ -1,5 +1,6 @@
-
-<img align="center" src="./BUhB.gif" width="600" height="200" />
+<p align="center">
+  <img  src="./BUhB.gif" width="600" height="200" />
+</p>
 
 <h1 align="center">Hi 👋, I'm Jherson Rojas</h1>
 <h3 align="center">A passionate FullStack developer from Colombia</h3>
