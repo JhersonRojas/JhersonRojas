@@ -1,5 +1,5 @@
-![](./BUhB.gif)
 
+<img src="./BUhB.gif" width="300" height="150" />
 
 <h1 align="center">Hi 👋, I'm Jherson Rojas</h1>
 <h3 align="center">A passionate FullStack developer from Colombia</h3>
