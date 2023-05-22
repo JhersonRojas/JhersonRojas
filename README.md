@@ -1,5 +1,5 @@
 <p align="center">
-  <img  src="./BUhB.gif" width="600" height="200" />
+  <img  src="./BUhB.gif" width="1000" height="250" />
 </p>
 
 <h1 align="center">Hi 👋, I'm Jherson Rojas</h1>
@@ -10,7 +10,7 @@
   <a href="https://co.linkedin.com/in/jherson-alejandro-rojas-chamorro-566131253?trk=people-guest_people_search-card" target="blank">
     <img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-      alt="jherson alejandro rojas chamorro" height="35" width="50" />
+      alt="jherson alejandro rojas chamorro" height="40" width="35" />
   </a>
 </p>
 
@@ -68,17 +68,13 @@
 
 <h3 align="center">Another tools</h3>
 <p align="center">
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux"
+  <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator"
       width="40" height="40" />
   </a> &nbsp; 
   <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />
   </a> &nbsp; 
-  <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator"
-      width="40" height="40" />
-  </a>
   <a href="https://postman.com" target="_blank" rel="noreferrer"> 
     <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
   </a> 
