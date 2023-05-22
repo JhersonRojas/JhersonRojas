@@ -10,7 +10,7 @@
   <a href="https://co.linkedin.com/in/jherson-alejandro-rojas-chamorro-566131253?trk=people-guest_people_search-card" target="blank">
     <img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-      alt="jherson alejandro rojas chamorro" height="30" width="40" />
+      alt="jherson alejandro rojas chamorro" height="35" width="50" />
   </a>
 </p>
 
@@ -23,9 +23,6 @@
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
       alt="typescript" width="40" height="40" />
-  </a> &nbsp; 
-    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" />
   </a> &nbsp; 
     <a href="https://mariadb.org/" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40" />
