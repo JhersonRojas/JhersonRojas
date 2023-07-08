@@ -2,7 +2,7 @@
   --bg-page: #202020;
   --bg-space: #03091b;
   --text-color: white;
-  --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -13,7 +13,6 @@ body {
 
 #root {
   background-color: var(--bg-space);
-  font-family: var(--font-family);
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
