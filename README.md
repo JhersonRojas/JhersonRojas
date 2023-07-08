@@ -1,5 +1,5 @@
 <p align="center">
-  <img  src="./estela.gif" width="100%" height="500px" style="object-fit: cover"/>
+  <img  src="./hole.gif" width="100%" height="300px" style="object-fit: cover"/>
 </p>
 
 <h1 align="center">Hi 👋, I'm Jherson Rojas</h1>
