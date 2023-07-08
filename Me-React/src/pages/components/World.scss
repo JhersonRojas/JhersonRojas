@@ -1,0 +1,94 @@
+.planet-container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  width: 44vw;
+  height: 44vw;
+  bottom: -22vw;
+  left: -10vw;
+  border-radius: 50%;
+  box-shadow: 0 .1rem 20rem 0 rgba(153, 0, 0, .9) !important;
+}
+
+.night {
+  z-index: 2;
+  background-image: url('../../../public/world_night.jpg');
+  position: absolute;
+  height: 44vw;
+  width: 44vw;
+  background-size: 200%;
+  animation: rotate-night 80s linear infinite;
+}
+
+.day {
+  z-index: 3;
+  background-image: url('../../../public/world_day.jpg');
+  border-radius: 50%;
+  width: 44vw;
+  height: 44vw;
+  margin-left: 110px;
+  position: absolute;
+  background-size: 200%;
+  border-left: solid 1px black;
+  box-shadow: 5px 0 20px 10px #040615 inset;
+  animation: rotate-day 80s linear infinite;
+}
+
+.clouds {
+  z-index: 4;
+  background-image: url('../../../public/world_clouds.jpg');
+  position: absolute;
+  height: 44vw;
+  width: 44vw;
+  opacity: 0.45;
+  margin-left: 100px;
+  background-size: 200%;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
+  animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
+}
+
+.inner-shadow {
+  z-index: 5;
+  background: transparent;
+  position: absolute;
+  height: 44vw;
+  width: 44vw;
+  margin-left: 0;
+  border-radius: 50%;
+  box-shadow: -5px 0 10px 1px #152b57 inset, 5px 0 10px 1px #040615 inset;
+}
+
+@keyframes rotate-day {
+  0% {
+    background-position: 120% 0;
+  }
+
+  100% {
+    background-position: -80% 0;
+  }
+}
+
+@keyframes rotate-night {
+  0% {
+    background-position: calc(120% + 120px) 0;
+  }
+
+  100% {
+    background-position: calc(-80% + 120px) 0;
+  }
+}
+
+@keyframes spin-clouds {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

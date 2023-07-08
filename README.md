@@ -1,5 +1,5 @@
 <p align="center">
-  <img  src="./BUhB.gif" width="1000" height="250" />
+  <img  src="./animation.gif" width="1000" height="250" />
 </p>
 
 <h1 align="center">Hi 👋, I'm Jherson Rojas</h1>
