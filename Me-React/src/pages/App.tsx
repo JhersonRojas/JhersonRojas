@@ -5,25 +5,51 @@ export default function App() {
 
   return (
     <>
-      <div className="principal">
-        <StarsBackground stars={50} />
-        <div className="astronaut">
-          <World />
-          <img src="/onlyAstro.png" alt="Img astronaut" />
+      <div className="toolbar">
+        <div className="inicio-link">
+          <a href="#home">Inicio</a>
         </div>
-        <div className="content">
-          <div className="presentatiton">
-            <h1>Jherson Rojas</h1>
-            <h2>Frontend and Backend developer</h2>
+        <div className="details-link">
+          <a href="#details">Detalles</a>
+        </div>
+        <div className="contact-link">
+          <a href="#contact">Contacto</a>
+        </div>
+      </div>
+
+      <section id='home'>
+        <div className="home">
+          <StarsBackground stars={50} />
+          <div className="astronaut">
+            <World />
+            <img src="/onlyAstro.png" alt="Img astronaut" />
+          </div>
+          <div className="content">
+            <div className="presentatiton">
+              <h1>Jherson Rojas</h1>
+              <h2>Frontend and Backend developer</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="details">
-        <a href="https://react.dev" target="_blank">
-          <img src="/react.svg" className="logo react" alt="React logo" />
-        </a>
-        <h1>Hola</h1>
-      </div>
+      </section>
+
+      <section id='details'>
+        <div className="details">
+          <a href="https://react.dev" target="_blank">
+            <img src="/react.svg" className="logo react" alt="React logo" />
+          </a>
+          <h1>Hola</h1>
+        </div>
+      </section>
+      
+      <section id='contact'>
+        <div className="contact">
+          <a href="https://react.dev" target="_blank">
+            <img src="/react.svg" className="logo react" alt="React logo" />
+          </a>
+          <h1>Hola</h1>
+        </div>
+      </section>
     </>
   )
 }
