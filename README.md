@@ -29,7 +29,7 @@
 
 </div>
 
-<h3 align="center">Frameworks and Styles</h3>
+<h3 align="center">Frameworks and libraries</h3>
 <div align="center">
 
   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -42,7 +42,7 @@
 
 </div>
 
-<h3 align="center"> Extra for Type/Jascript </h3>
+<h3 align="center"> Extra for Type/Javascript </h3>
 <div align="center">
 
   ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
