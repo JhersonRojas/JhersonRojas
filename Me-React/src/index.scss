@@ -2,7 +2,13 @@
   --bg-page: #202020;
   --bg-space: #03091b;
   --text-color: white;
-  --font-family: Roboto, "Helvetica Neue", sans-serif;;
+  --font-family: Roboto, "Helvetica Neue", sans-serif;
+  --font-extra: hack_nerd
+}
+
+@font-face {
+  font-family: hack_nerd;
+  src: url("/fonts/HackNerdFont.ttf");
 }
 
 html,
