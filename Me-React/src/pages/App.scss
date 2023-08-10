@@ -1,5 +1,4 @@
 @media screen and (min-width: 700px) {
-
   .notView {
     opacity: 0;
   }
@@ -9,17 +8,12 @@
     background-color: #040817;
     color: var(--text-color);
     position: fixed;
-    top: 3vh;
-    right: 5vw;
-    width: 35vw;
-    height: 6vh;
-    border-radius: 15px;
-    box-shadow: 0 0 15px gray;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    transition: .3s;
+    bottom: 3vh;
+    left: 5vw;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 5px;
+    transition: 0.3s;
 
     div {
       display: flex;
@@ -31,17 +25,16 @@
 
       a {
         margin: auto;
-        font-family: var(--font-extra);
+        font-family: Arial, Helvetica, sans-serif;
         color: var(--text-color);
         text-decoration: none;
         font-size: 1rem;
         margin: auto;
       }
     }
-
   }
 
-  .home {
+  .inicio {
     background-color: var(--bg-space);
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
@@ -91,24 +84,24 @@
         position: absolute;
         bottom: 10%;
         right: 15%;
-        transition: .3s;
+        transition: 0.3s;
 
         .nombre {
           font-family: var(--font-extra);
-          font-size: 3rem;
+          font-size: 2.2rem;
           margin: 0;
         }
 
         .ambito {
           font-family: var(--font-extra);
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           margin: 0;
         }
       }
     }
   }
 
-  .details {
+  .detalles {
     background-color: var(--bg-space);
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -132,7 +125,6 @@
 
       .subSkills {
         height: 50vh;
-
       }
     }
   }
@@ -144,5 +136,4 @@
     height: 100vh;
     width: 100%;
   }
-
 }
