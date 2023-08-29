@@ -1,6 +1,5 @@
 // Paquetes de Next y React
-import NextLink from "next/link"
-import NextImg from "next/image"
+import NextImg from "next/image";
 
 // Componentes y estilos
 import World from "@/components/app/World/World";
@@ -9,10 +8,10 @@ export default function Home() {
   return (
     <>
       <section id="inicio">
-        <div className="">
+        <div className="pt-20">
           {/* presentación */}
-          <div className="w-full h-[50hw] grid">
-            <span className="text-white m-auto">
+          <div className="w-full h-[50hw] mb-20 grid">
+            <span className="text-black dark:text-white m-auto">
               <h2 className="text-[8rem]">
                 Jherson Rojas
               </h2>
@@ -28,13 +27,13 @@ export default function Home() {
                 className="absolute left-[30vw]"
               />
               {/* imagen de anstronauta */}
-              <div className="w-fit absolute left-[30vw] z-10">
+              <div className="w-fit absolute top-[-5vw] right-[20vw] z-10">
                 <NextImg
                   width={336}
                   height={600}
                   src="/img/onlyAstro.png"
                   alt="Astronaut image"
-                  className="w-1/2"
+                  className="astronaut w-1/2"
                 />
               </div>
             </div>
