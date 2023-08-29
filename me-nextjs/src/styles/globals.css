@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: oswald;
+  src: url("/fonts/OswaldBold.ttf");
+}
  
 @layer base {
   :root {
@@ -73,4 +78,13 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+h2 {
+  font-family: oswald;
+}
+
+.content-local::-webkit-scrollbar {
+  scrollbar-width: none; /* Ocultar scroll para Firefox */
+  display: none; /* Ocultar scroll para Chrome, Safari y Opera */
 }
