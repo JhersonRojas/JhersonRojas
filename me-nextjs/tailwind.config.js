@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -16,6 +16,14 @@ module.exports = {
       },
     },
     extend: {
+      // mine
+      dropShadow: {
+        'red': "5px 0 25px rgba(153, 0, 0, 0.9)"
+      },
+      textColor: {
+        carmesi: "rgba(153, 0, 0, 0.9)"
+      },
+      // default
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

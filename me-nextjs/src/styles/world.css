@@ -2,19 +2,16 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
-  width: 40vw;
-  height: 40vw;
   border-radius: 50%;
-  box-shadow: 0 .1rem 20rem 0 rgba(153, 0, 0, .9) !important;
+  box-shadow: 0 0.1rem 20rem 0 rgba(153, 0, 0, 0.9) !important;
 }
 
 .night {
   z-index: 2;
   background-image: url("/world/world_night.jpg");
   position: absolute;
-  height: 40vw;
-  width: 40vw;
   background-size: 200%;
+  animation-delay: 1.2s;
   animation: rotate-night 90s linear infinite;
 }
 
@@ -22,11 +19,9 @@
   z-index: 3;
   background-image: url("/world/world_day.jpg");
   border-radius: 50%;
-  width: 40vw;
-  height: 40vw;
   position: absolute;
   background-size: 200%;
-  margin-left: 18%;
+  margin-left: 25%;
   border-left: solid 1px black;
   box-shadow: 5px 0 20px 10px #040615 inset;
   animation: rotate-day 90s linear infinite;
@@ -36,8 +31,6 @@
   z-index: 4;
   background-image: url("/world/world_clouds.jpg");
   position: absolute;
-  height: 40vw;
-  width: 40vw;
   opacity: 0.35;
   background-size: 200%;
   border-radius: 50%;
@@ -49,8 +42,6 @@
   z-index: 5;
   background: transparent;
   position: absolute;
-  height: 40vw;
-  width: 40vw;
   border-radius: 50%;
   box-shadow: -15px 0 20px 1px #07152f inset, 5px 0 10px 1px #040615 inset;
 }
