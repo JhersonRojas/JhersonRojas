@@ -1,15 +1,41 @@
 ---
+import Donut from "../components/Donut.astro";
+import MenuBar from "../components/MenuBar.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style></style>
+
+<Layout title="Rojas Dev">
+	<!-- Menú de navegación -->
+	<MenuBar />
+	<main class="bg-black w-screen h-screen overflow-x-hidden overflow-y-auto">
+		<!-- Presentanción -->
+		<section id="inicio" class="w-screen h-screen relative">
+			<article
+				class={"text-white absolute" +
+					" " +
+					// Movil
+					"top-[55%] sm:top-[70%] left-[15%] sm:left-[25%]" +
+					" " +
+					// Escritorio
+					"lg:top-[55%] lg:left-[10%]"}
+			>
+				<h2 class="text-[3.5rem] sm:text-[4rem] lg:text-[5rem] font-extrabold">Rojas Dev</h2>
+				<p class="text-base">Desarrollador de software Full-Stack</p>
+			</article>
+			<figure
+				class={"text-white absolute" +
+					" " +
+					// Movil
+					"top-[10%] sm:top-[15%] left-0 sm:left-[15%]" +
+					" " +
+					// Escritorio
+					"lg:top-[15%] 2xl:top-[25%] lg:left-[40%] xl:left-[45%]"}
+			>
+				<!-- Dona movil en la presentación  -->
+				<Donut />
+			</figure>
+		</section>
+	</main>
+</Layout>

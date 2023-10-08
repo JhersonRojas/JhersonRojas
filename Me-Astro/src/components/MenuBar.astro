@@ -1,0 +1,31 @@
+---
+import {
+  IconHome,
+  IconPerson,
+  IconCode,
+  IconShare,
+} from "../components/icons/global-icons";
+---
+
+<aside
+  class={"w-full sm:w-min h-min p-6 fixed z-50 " +
+    // Movil
+    "bottom-[5%] sm:bottom-auto " +
+    // Escritorio
+    "sm:top-[30%] sm:right-[1%]"}
+>
+  <ul class="text-white flex sm:grid gap-4 justify-center">
+    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+      <IconHome />
+    </li>
+    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+      <IconPerson />
+    </li>
+    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+      <IconCode />
+    </li>
+    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+      <IconShare />
+    </li>
+  </ul>
+</aside>
