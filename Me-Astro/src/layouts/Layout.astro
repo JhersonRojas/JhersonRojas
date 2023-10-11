@@ -12,7 +12,12 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/icon.png" class="rounded"/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/icon.png"
+			style={{ borderRadius: "50%" }}
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -23,6 +28,12 @@ const { title } = Astro.props;
 <style is:global>
 	html {
 		font-family: system-ui, sans-serif;
+	}
+
+	html,
+	body,
+	main {
+		scroll-behavior: smooth;
 	}
 
 	code {

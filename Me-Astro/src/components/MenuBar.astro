@@ -14,18 +14,72 @@ import {
     // Escritorio
     "sm:top-[30%] sm:right-[1%]"}
 >
-  <ul class="text-white flex sm:grid gap-4 justify-center">
-    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+  <ul
+    id="content-sections"
+    class="text-white flex sm:grid gap-4 justify-center"
+  >
+    <a
+      href="/"
+      id="section-home"
+      class="hover:bg-white hover:text-black p-4 transition-all rounded"
+    >
       <IconHome />
-    </li>
-    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+    </a>
+    <a
+      href="/#about"
+      id="section-about"
+      class="hover:bg-white hover:text-black p-4 transition-all rounded"
+    >
       <IconPerson />
-    </li>
-    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+    </a>
+    <a
+      href="/#skills"
+      id="section-skills"
+      class="hover:bg-white hover:text-black p-4 transition-all rounded"
+    >
       <IconCode />
-    </li>
-    <li class="hover:bg-white hover:text-black p-4 transition-all rounded ">
+    </a>
+    <a
+      href="/#contact"
+      id="section-contact"
+      class="hover:bg-white hover:text-black p-4 transition-all rounded"
+    >
       <IconShare />
-    </li>
+    </a>
   </ul>
 </aside>
+
+<script>
+  window.addEventListener("load", function () {
+    chooseSection();
+  });
+
+  window.addEventListener("hashchange", function (event) {
+    event.preventDefault();
+    chooseSection();
+  });
+
+  const content = document.getElementById("content-sections")?.children;
+
+  function chooseSection() {
+    const hashed = window.location.hash.substring(1);
+
+    const selectSection = document.getElementById(
+      hashed ? `section-${hashed}` : "section-home",
+    );
+
+    selectSection?.classList.add("bg-white");
+    selectSection?.classList.add("text-black");
+
+    if (!content) return;
+
+    for (let index = 0; index < content.length; index++) {
+      const section = content[index];
+      if (section !== selectSection) {
+        section?.classList.remove("bg-white");
+        section?.classList.remove("text-black");
+      }
+    }
+  }
+  
+</script>

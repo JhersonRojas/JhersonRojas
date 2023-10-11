@@ -4,14 +4,14 @@ import MenuBar from "../components/MenuBar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<style></style>
-
 <Layout title="Rojas Dev">
 	<!-- Menú de navegación -->
 	<MenuBar />
+
+	<!-- contenido principal del portafolio -->
 	<main class="bg-black w-screen h-screen overflow-x-hidden overflow-y-auto">
 		<!-- Presentanción -->
-		<section id="inicio" class="w-screen h-screen relative">
+		<section id="home" class="w-screen h-screen relative">
 			<article
 				class={"text-white absolute" +
 					" " +
@@ -21,7 +21,9 @@ import Layout from "../layouts/Layout.astro";
 					// Escritorio
 					"lg:top-[55%] lg:left-[10%]"}
 			>
-				<h2 class="text-[3.5rem] sm:text-[4rem] lg:text-[5rem] font-extrabold">Rojas Dev</h2>
+				<h2 class="text-[3.5rem] sm:text-[4rem] lg:text-[5rem] font-extrabold">
+					Rojas Dev
+				</h2>
 				<p class="text-base">Desarrollador de software Full-Stack</p>
 			</article>
 			<figure
@@ -36,6 +38,37 @@ import Layout from "../layouts/Layout.astro";
 				<!-- Dona movil en la presentación  -->
 				<Donut />
 			</figure>
+		</section>
+
+		<!-- sobre mi -->
+		<section id="about" class="w-screen h-screen grid grid-cols-2">
+			<article class="text-white h-[80%] my-auto">
+				<p>
+					"¡Hola! Soy un apasionado programador Junior Fullstack con experiencia
+					en el emocionante mundo de JavaScript y TypeScript. Mi enfoque abarca
+					tanto el desarrollo de aplicaciones de servidor como el diseño de
+					experiencias de usuario excepcionales en el front-end.
+				</p>
+				<p>
+					He trabajado con diversas librerías tanto en el back-end como en el
+					front-end, lo que me ha brindado una amplia perspectiva en la creación
+					de soluciones tecnológicas eficaces y de alto rendimiento. Tengo un
+					conocimiento sólido en el funcionamiento de frameworks modernos como
+					Angular 15, React 17+, Next.js 13+ e Ionic 6, lo que me permite crear
+					aplicaciones web y móviles interactivas y atractivas.
+				</p>
+				<p>
+					Mi entusiasmo por la programación y mi capacidad para adaptarme
+					rápidamente a nuevas tecnologías me han permitido contribuir de manera
+					efectiva en equipos de desarrollo dinámicos y orientados a resultados.
+				</p>
+				<p>
+					Estoy ansioso por aplicar mi experiencia y conocimiento para abordar
+					desafíos emocionantes y contribuir al éxito de proyectos innovadores.
+					¡Espero tener la oportunidad de colaborar contigo!"
+				</p>
+			</article>
+			<article>pop</article>
 		</section>
 	</main>
 </Layout>
