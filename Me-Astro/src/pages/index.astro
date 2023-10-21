@@ -2,6 +2,7 @@
 import Donut from "../components/Donut.astro";
 import MenuBar from "../components/MenuBar.astro";
 import Layout from "../layouts/Layout.astro";
+import { cn } from "../libs/utils";
 ---
 
 <Layout title="Rojas Dev">
@@ -13,13 +14,11 @@ import Layout from "../layouts/Layout.astro";
 		<!-- Presentanción -->
 		<section id="home" class="w-screen h-screen relative">
 			<article
-				class={"text-white absolute" +
-					" " +
-					// Movil
-					"top-[55%] sm:top-[70%] left-[15%] sm:left-[25%]" +
-					" " +
-					// Escritorio
-					"lg:top-[55%] lg:left-[10%]"}
+				class={cn(
+					"text-white absolute",
+					"top-[55%] sm:top-[70%] left-[15%] sm:left-[25%]",
+					"lg:top-[55%] lg:left-[10%]",
+				)}
 			>
 				<h2 class="text-[3.5rem] sm:text-[4rem] lg:text-[5rem] font-extrabold">
 					Rojas Dev
@@ -27,13 +26,11 @@ import Layout from "../layouts/Layout.astro";
 				<p class="text-base">Desarrollador de software Full-Stack</p>
 			</article>
 			<figure
-				class={"text-white absolute" +
-					" " +
-					// Movil
-					"top-[10%] sm:top-[15%] left-0 sm:left-[15%]" +
-					" " +
-					// Escritorio
-					"lg:top-[15%] 2xl:top-[25%] lg:left-[40%] xl:left-[45%]"}
+				class={cn(
+					"text-white absolute",
+					"top-[10%] sm:top-[15%] left-0 sm:left-[15%]",
+					"lg:top-[15%] 2xl:top-[25%] lg:left-[40%] xl:left-[45%]",
+				)}
 			>
 				<!-- Dona movil en la presentación  -->
 				<Donut />
@@ -41,8 +38,10 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 
 		<!-- sobre mi -->
-		<section id="about" class="w-screen h-screen grid grid-cols-2">
-			<article class="text-white h-[80%] my-auto">
+		<section id="about" class="w-screen h-screen grid">
+			<article
+				class="text-white text-center w-[75%] h-min m-auto space-y-4 lg:space-y-6"
+			>
 				<p>
 					"¡Hola! Soy un apasionado programador Junior Fullstack con experiencia
 					en el emocionante mundo de JavaScript y TypeScript. Mi enfoque abarca
@@ -54,7 +53,7 @@ import Layout from "../layouts/Layout.astro";
 					front-end, lo que me ha brindado una amplia perspectiva en la creación
 					de soluciones tecnológicas eficaces y de alto rendimiento. Tengo un
 					conocimiento sólido en el funcionamiento de frameworks modernos como
-					Angular 15, React 17+, Next.js 13+ e Ionic 6, lo que me permite crear
+					React 17+, Next.js 13+, Angular 15+ e Ionic 6, lo que me permite crear
 					aplicaciones web y móviles interactivas y atractivas.
 				</p>
 				<p>
@@ -68,7 +67,9 @@ import Layout from "../layouts/Layout.astro";
 					¡Espero tener la oportunidad de colaborar contigo!"
 				</p>
 			</article>
-			<article>pop</article>
 		</section>
+
+		<!-- sección de habilidades -->
+		<!-- <section id="skills" class="w-screen h-screen grid"></section> -->
 	</main>
 </Layout>
