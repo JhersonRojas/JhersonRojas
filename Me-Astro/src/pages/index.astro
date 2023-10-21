@@ -1,5 +1,5 @@
 ---
-import Donut from "../components/Donut.astro";
+import Cube from "../components/Cube.astro";
 import MenuBar from "../components/MenuBar.astro";
 import Layout from "../layouts/Layout.astro";
 import { cn } from "../libs/utils";
@@ -10,9 +10,9 @@ import { cn } from "../libs/utils";
 	<MenuBar />
 
 	<!-- contenido principal del portafolio -->
-	<main class="bg-black w-screen h-screen overflow-x-hidden overflow-y-auto">
+	<main class="bg-white w-screen h-screen overflow-x-hidden overflow-y-auto">
 		<!-- Presentanción -->
-		<section id="home" class="w-screen h-screen relative">
+		<section id="home" class="bg-custom-to-down md:bg-custom-to-right w-screen h-screen relative">
 			<article
 				class={cn(
 					"text-white absolute",
@@ -28,17 +28,17 @@ import { cn } from "../libs/utils";
 			<figure
 				class={cn(
 					"text-white absolute",
-					"top-[10%] sm:top-[15%] left-0 sm:left-[15%]",
-					"lg:top-[15%] 2xl:top-[25%] lg:left-[40%] xl:left-[45%]",
+					"top-[15%] sm:top-[15%] left-[50%] translate-x-[-50%] sm:left-[40%]",
+					"lg:top-[15%] xl:top-[20%] lg:left-[50%] xl:left-[65%]",
 				)}
 			>
-				<!-- Dona movil en la presentación  -->
-				<Donut />
+				<!-- Cubo movil en la presentación  -->
+				<Cube />
 			</figure>
 		</section>
 
 		<!-- sobre mi -->
-		<section id="about" class="w-screen h-screen grid">
+		<section id="about" class="bg-custom-gray md:bg-custom-to-right w-screen h-screen grid">
 			<article
 				class="text-white text-center w-[75%] h-min m-auto space-y-4 lg:space-y-6"
 			>
