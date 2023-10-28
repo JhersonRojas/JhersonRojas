@@ -12,22 +12,22 @@ import {
 <div class="cuboContainer">
   <div class="cubo">
     <div class="cara cara1 grid justify-center items-center">
-      <IconReactjs width={75} height={75} />
+      <IconReactjs className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
     <div class="cara cara2 grid justify-center items-center">
-      <IconPython width={75} height={75} />
+      <IconPython className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
     <div class="cara cara3 grid justify-center items-center">
-      <IconAngular width={75} height={75} />
+      <IconAngular className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
     <div class="cara cara4 grid justify-center items-center">
-      <IconNextjs width={75} height={75} />
+      <IconNextjs className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
     <div class="cara cara5 grid justify-center items-center">
-      <IconTs width={75} height={75} />
+      <IconTs className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
     <div class="cara cara6 grid justify-center items-center">
-      <IconJs width={75} height={75} />
+      <IconJs className="w-[50px] sm:w-[75px] h-[50px] sm:h-[75px]" />
     </div>
   </div>
 </div>
@@ -61,27 +61,33 @@ import {
 
   .cara1 {
     transform: translateZ(100px) rotateY(180deg);
-    background-color: #f0f0f0; /* Blanco */
+    /* Blanco */
+    background-color: #f0f0f0;
   }
   .cara2 {
     transform: rotateY(90deg) translateZ(100px);
-    background-color: #e0e0e0; /* Blanco un poco más oscuro */
+    /* Blanco un poco más oscuro */
+    background-color: #e0e0e0;
   }
   .cara3 {
     transform: rotateY(180deg) translateZ(100px);
-    background-color: #d0d0d0; /* Blanco aún más oscuro */
+    /* Blanco aún más oscuro */
+    background-color: #d0d0d0;
   }
   .cara4 {
     transform: rotateY(-90deg) translateZ(100px);
-    background-color: #c0c0c0; /* Blanco más oscuro */
+    /* Blanco más oscuro */
+    background-color: #c0c0c0;
   }
   .cara5 {
     transform: rotateX(90deg) translateZ(100px);
-    background-color: #b0b0b0; /* Blanco más oscuro aún */
+    /* Blanco más oscuro aún */
+    background-color: #b0b0b0;
   }
   .cara6 {
     transform: rotateX(-90deg) translateZ(100px);
-    background-color: #a0a0a0; /* Blanco más oscuro aún */
+    /* Blanco más oscuro aún */
+    background-color: #a0a0a0;
   }
 
   @keyframes spin {
@@ -95,33 +101,33 @@ import {
 
   @media screen and (max-width: 400px) {
     .cuboContainer {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
 
     .cara {
-      width: 150px;
-      height: 150px;
-      line-height: 150px;
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
     }
 
     .cara1 {
-      transform: translateZ(75px) rotateY(180deg);
+      transform: translateZ(60px) rotateY(180deg);
     }
     .cara2 {
-      transform: rotateY(90deg) translateZ(75px);
+      transform: rotateY(90deg) translateZ(60px);
     }
     .cara3 {
-      transform: rotateY(180deg) translateZ(75px);
+      transform: rotateY(180deg) translateZ(60px);
     }
     .cara4 {
-      transform: rotateY(-90deg) translateZ(75px);
+      transform: rotateY(-90deg) translateZ(60px);
     }
     .cara5 {
-      transform: rotateX(90deg) translateZ(75px);
+      transform: rotateX(90deg) translateZ(60px);
     }
     .cara6 {
-      transform: rotateX(-90deg) translateZ(75px);
+      transform: rotateX(-90deg) translateZ(60px);
     }
   }
 </style>
