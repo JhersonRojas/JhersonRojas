@@ -47,4 +47,27 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	/* 
+  Cambio de estilo del scrollbar en CSS 
+*/
+
+	.custombar {
+		scrollbar-width: thin;
+		scrollbar-color: #161a1d #f1f1f1;
+	}
+
+	.custombar::-webkit-scrollbar-track {
+		background-color: #f1f1f1;
+	}
+
+	.custombar::-webkit-scrollbar-thumb {
+		background-color: #161a1d;
+	}
+
+	@media screen and (min-width: 768px) {
+		.custombar::-webkit-scrollbar {
+			width: 12px;
+		}
+	}
 </style>

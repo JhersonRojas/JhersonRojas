@@ -1,8 +1,13 @@
 ---
+// Funcionalidades
+import { cn } from "../libs/utils";
+
+// Layouts
+import Layout from "../layouts/Layout.astro";
+
+// Componentes
 import Cube from "../components/Cube.astro";
 import MenuBar from "../components/MenuBar.astro";
-import Layout from "../layouts/Layout.astro";
-import { cn } from "../libs/utils";
 ---
 
 <Layout title="Rojas Dev">
@@ -10,9 +15,11 @@ import { cn } from "../libs/utils";
 	<MenuBar />
 
 	<!-- contenido principal del portafolio -->
-	<main class="bg-white w-screen h-screen overflow-x-hidden overflow-y-auto">
+	<main
+		class="custombar bg-black w-screen h-screen overflow-x-hidden overflow-y-auto"
+	>
 		<!-- Presentanción -->
-		<section id="home" class="bg-custom-to-down md:bg-custom-to-up w-screen h-screen relative">
+		<section id="home" class="bg-custom-to-up w-screen h-screen relative">
 			<article
 				class={cn(
 					"text-white absolute",
@@ -38,22 +45,35 @@ import { cn } from "../libs/utils";
 		</section>
 
 		<!-- sobre mi -->
-		<section id="about" class="bg-custom-gray md:bg-custom-black w-screen h-screen grid">
+		<section
+			id="about"
+			class="bg-custom-black w-screen h-screen md:grid md:grid-cols-5"
+		>
+			<figure class="w-full col-span-2 grid md:block">
+				<img
+					src="/icon.png"
+					alt="imagen-logo"
+					class="w-[50%] h-auto mx-auto mt-[25%] rounded-full"
+				/>
+				<p class="text-white text-center text-xl font-semibold w-full my-[5%]">
+					Jherson A. Rojas
+				</p>
+			</figure>
 			<article
-				class="text-white text-center w-[75%] h-min m-auto space-y-4 lg:space-y-6"
+				class="text-white text-center w-full h-min m-auto px-8 md:pr-[20%] col-span-3 space-y-4 lg:space-y-6"
 			>
 				<p>
 					"¡Hola! Soy un apasionado programador Junior Fullstack con experiencia
-					en el emocionante mundo de JavaScript y TypeScript. Mi enfoque abarca
-					tanto el desarrollo de aplicaciones de servidor como el diseño de
-					experiencias de usuario excepcionales en el front-end.
+					en el ecosistema de JavaScript y TypeScript. Mi enfoque abarca tanto
+					el desarrollo de aplicaciones de servidor como el diseño de
+					experiencias de usuario amigables en el front-end.
 				</p>
 				<p>
 					He trabajado con diversas librerías tanto en el back-end como en el
 					front-end, lo que me ha brindado una amplia perspectiva en la creación
 					de soluciones tecnológicas eficaces y de alto rendimiento. Tengo un
 					conocimiento sólido en el funcionamiento de frameworks modernos como
-					React 17+, Next.js 13+, Angular 15+ e Ionic 6, lo que me permite crear
+					React 17+, Next.js 13+, Angular 14+ e Ionic 6, lo que me permite crear
 					aplicaciones web y móviles interactivas y atractivas.
 				</p>
 				<p>
@@ -71,5 +91,11 @@ import { cn } from "../libs/utils";
 
 		<!-- sección de habilidades -->
 		<!-- <section id="skills" class="w-screen h-screen grid"></section> -->
+
+		<section id="certifies" class="bg-custom-to-down w-screen h-screen grid">
+			<article>
+				<h2>Certificados en conocimientos</h2>
+			</article>
+		</section>
 	</main>
 </Layout>
