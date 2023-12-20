@@ -61,6 +61,7 @@
 [<img src="./assets/backend/mariadb.svg" width="50rem" height="50rem" />](https://mariadb.org/)
 [<img src="./assets/backend/next.svg" width="50rem" height="50rem" style="background-color: white; border-radius: 50%;" />](https://nextjs.org/)
 [<img src="./assets/backend/docker.svg" width="55rem" height="55rem" />](https://www.docker.com/)
+[<img src="./assets/backend/git.svg" width="55rem" height="55rem" />](https://git-scm.com/)
 [<img src="./assets/backend/express.svg" width="35rem" height="35rem" style="background-color: white; padding: 0.5rem; border-radius: 50%;" />](https://expressjs.com/)
 [<img src="./assets/backend/mysql.svg" width="60rem" height="60rem" />](https://www.mysql.com/)
 
@@ -72,7 +73,7 @@
 <div align="center">
 
 [<img src="./assets/others/vercel.svg" width="50rem" height="50rem" />](https://vercel.com/)
-[<img src="./assets/others/jwt.svg" width="40rem" height="40rem" />](https://www.jwt.io/)
+[<img src="./assets/others/jwt.svg" width="40rem" height="40rem" />](https://jwt.io/)
 [<img src="./assets/others/linux.svg" width="50rem" height="50rem" />](https://www.google.com/)
 
 </div>
