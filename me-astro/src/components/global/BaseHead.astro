@@ -1,0 +1,35 @@
+<!-- metadescripciones -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<meta name="description" content="Portafolio para desarrollador Full-Stack" />
+
+<!-- iconos -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<!-- tema script -->
+<script>
+    if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        window.document.documentElement.classList.add("dark");
+    } else {
+        window.document.documentElement.classList.remove("dark");
+    }
+</script>
+
+<style is:global>
+    .custom-back {
+        background-image: linear-gradient(rgb(39, 39, 42) 1px, transparent 1px),
+            linear-gradient(to right, rgb(39, 39, 42) 1px, rgb(0, 0, 0) 1px);
+        background-size: calc(65vw / 9.02) calc(65vw / 9.02);
+        --darkreader-inline-bgcolor: #1c1e1f;
+        --darkreader-inline-bgimage: radial-gradient(
+                #990000 1px,
+                rgba(0, 0, 0, 0) 1px
+            ),
+            radial-gradient(#990000 1px, #1c1e1f 1px);
+    }
+</style>

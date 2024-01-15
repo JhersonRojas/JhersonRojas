@@ -1,0 +1,29 @@
+---
+import { IconLuna, IconSol } from "../others/Icons";
+---
+
+<button
+    id="toggle-button"
+    aria-label="Cambio de tema"
+    class="text-black dark:text-white p-4 border-black border-2"
+>
+    <IconLuna className="fill-white w-6 h-6 hidden dark:block" />
+    <IconSol className="fill-black w-6 h-6 dark:hidden" />
+</button>
+
+<script>
+    const button: HTMLButtonElement | null =
+        document.querySelector("#toggle-button");
+
+    if (button) {
+        button.addEventListener("click", () => {
+            if (window.localStorage.theme === "light") {
+                document.documentElement.classList.add("dark");
+                window.localStorage.theme = "dark";
+            } else {
+                document.documentElement.classList.remove("dark");
+                window.localStorage.theme = "light";
+            }
+        });
+    }
+</script>
