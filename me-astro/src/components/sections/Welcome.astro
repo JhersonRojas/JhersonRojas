@@ -1,0 +1,51 @@
+---
+import ToggleTheme from "../global/ToggleTheme.astro";
+import { IconLogo } from "../others/Icons";
+---
+
+<section
+    aria-label="Sección de presentación"
+    class="bg-patron-desing dark:bg-patron-desing-dark bg-patron-size-sm lg:bg-patron-size-md h-min mb-6"
+>
+    <article
+        class="h-[183.5vw] lg:h-[38.9vw] relative grid grid-cols-6 lg:grid-cols-9 grid-rows-11 lg:grid-rows-5"
+    >
+        <IconLogo
+            className="fill-zinc-400 dark:fill-zinc-800 opacity-40 h-full z-0 absolute bottom-0 right-0 "
+        />
+        <p
+            aria-label="Nombre del desarrollador"
+            class="font-extrabold text-3xl xl:text-4xl m-auto hidden lg:block z-10 col-span-6 row-start-4"
+        >
+            JHERSON ALEJANDRO ROJAS
+        </p>
+        <div
+            aria-label="Nombre del desarrollador"
+            class="font-extrabold text-3xl lg:hidden z-10 col-span-6 row-span-3 row-start-6 grid grid-cols-6 grid-rows-3"
+        >
+            <p class="m-auto col-span-3 col-start-2">JHERSON</p>
+            <p class="m-auto col-span-6">ALEJANDRO</p>
+            <p class="m-auto col-span-2 col-start-3">ROJAS</p>
+            <div class="m-auto col-span-1 col-start-5">
+                <ToggleTheme />
+            </div>
+        </div>
+        <p
+            aria-label="A que me dedico"
+            class="font-semibold z-10 col-span-6 lg:col-span-3 lg:row-start-5 grid justify-center items-center"
+        >
+            Desarrollador Full-Stack!!
+        </p>
+        <div
+            class="text-white dark:text-black px-6 z-10 col-span-6 lg:col-span-3 lg:col-start-7 row-start-10 lg:row-start-5 grid justify-center items-center"
+        >
+            <button
+                id="btn-questions"
+                aria-label="Boton para preguntas curiosas"
+                class="bg-black dark:bg-white font-semibold text-sm py-4 px-6 rounded-full"
+            >
+                Pregunta y lo veras
+            </button>
+        </div>
+    </article>
+</section>

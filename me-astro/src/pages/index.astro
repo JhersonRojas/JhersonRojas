@@ -1,5 +1,6 @@
 ---
 import { IconLogo } from "../components/others/Icons";
+import Welcome from "../components/sections/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -7,13 +8,11 @@ import Layout from "../layouts/Layout.astro";
     <main
         class="bg-white dark:bg-black text-black dark:text-white min-w-screen min-h-screen"
     >
-        <article class="md:max-w-[65vw] md:w-[65vw] mx-auto overflow-auto">
-            <nav
-                class="w-full h-24 p-6 flex items-center justify-between border-zinc-800 border-b-[1px]"
-            >
+        <article class="lg:max-w-[70vw] lg:w-[70vw] mx-auto overflow-auto">
+            <nav class="w-full h-24 lg:h-20 flex items-center justify-between">
                 <a
                     href="/"
-                    class="flex items-end transition-all hover:opacity-80"
+                    class="mx-auto lg:mx-0 flex items-end transition-all hover:opacity-80"
                 >
                     <p class="flex items-center">
                         <b class="font-extrabold text-4xl">ROJ</b>
@@ -24,38 +23,31 @@ import Layout from "../layouts/Layout.astro";
                     </p>
                     <small class="text-xl">.dev</small>
                 </a>
-                <ul class="font-semibold flex gap-10">
+                <ul class="font-semibold hidden lg:flex gap-10">
                     <li class="transition-all hover:opacity-80">
                         <a href="/" title="Inicio del portafolio">Inicio</a>
                     </li>
                     <li class="transition-all hover:opacity-80">
-                        <a href="#" title="Mas acerca de mi">Sobre mi</a>
-                    </li>
-                    <li class="transition-all hover:opacity-80">
-                        <a href="#" title="Conocimientos y habilidades">
-                            Habilidades
+                        <a
+                            href="#jobs"
+                            title="Experiencias y trabajos realizados"
+                        >
+                            Trabajos
                         </a>
                     </li>
                     <li class="transition-all hover:opacity-80">
-                        <a href="#" title="Donde encontrarme y contacto">
+                        <a href="#skills" title="Habilidades y tecnologias">
+                            Conocimientos
+                        </a>
+                    </li>
+                    <li class="transition-all hover:opacity-80">
+                        <a href="#contact" title="Donde encontrarme y contacto">
                             Contacto
                         </a>
                     </li>
                 </ul>
             </nav>
-            <section class="custom-back h-min px-6">
-                <article class="flex items-center justify-center">
-                    <p class="my-56 flex items-center">
-                        <b class="font-extrabold text-5xl">
-                            JHERSON ALEJANDRO ROJ
-                        </b>
-                        <IconLogo
-                            className="fill-black dark:fill-white w-10 h-10"
-                        />
-                        <b class="font-extrabold text-5xl">S</b>
-                    </p>
-                </article>
-            </section>
+            <Welcome />
         </article>
     </main>
 </Layout>
