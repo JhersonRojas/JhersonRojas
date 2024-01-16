@@ -1,0 +1,37 @@
+---
+import { IconLogo } from "../others/Icons";
+---
+
+<nav class="w-full h-20 2xl:h-24 flex items-center justify-between">
+    <a
+        href="/"
+        class="mx-auto lg:mx-0 flex items-end transition-all hover:opacity-80"
+    >
+        <p class="flex items-center">
+            <b class="font-extrabold text-4xl">ROJ</b>
+            <IconLogo className="fill-black dark:fill-white w-8 h-8" />
+            <b class="font-extrabold text-4xl">S</b>
+        </p>
+        <small class="text-xl">.dev</small>
+    </a>
+    <ul class="font-semibold hidden lg:flex gap-10">
+        <li class="transition-all hover:opacity-80">
+            <a href="/" title="Inicio del portafolio">Inicio</a>
+        </li>
+        <li class="transition-all hover:opacity-80">
+            <a href="#jobs" title="Experiencias y trabajos realizados">
+                Trabajos
+            </a>
+        </li>
+        <li class="transition-all hover:opacity-80">
+            <a href="#skills" title="Conocimientos y tecnologias">
+                Habilidades
+            </a>
+        </li>
+        <li class="transition-all hover:opacity-80">
+            <a href="#contact" title="Donde encontrarme y contacto">
+                Contacto
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,45 @@
+---
+import ToggleTheme from "../global/ToggleTheme.astro";
+import { IconLogo } from "../others/Icons";
+---
+
+<section
+    aria-label="Sección de presentación"
+    class="bg-patron-desing dark:bg-patron-desing-dark bg-patron-m lg:bg-patron-m-lg h-[calc(calc(100vi/6)*11)] lg:h-[calc(calc(70vi/9)*5)] relative"
+>
+    <IconLogo
+        className="fill-zinc-400 dark:fill-zinc-800 opacity-75 h-full z-0 absolute bottom-0 right-0 animate-pulse"
+    />
+    <article
+        aria-label="Grilla de presentación"
+        class="w-full h-full z-10 absolute grid grid-cols-6 lg:grid-cols-9 grid-rows-11 lg:grid-rows-5"
+    >
+        <header
+            aria-label="Nombre del desarrollador"
+            class="font-extrabold text-3xl xl:text-4xl col-span-6 row-span-3 lg:row-span-1 row-start-6 lg:row-start-4 grid grid-cols-6 grid-rows-3 lg:flex lg:gap-2 lg:justify-center lg:items-center"
+        >
+            <p class="m-auto lg:m-0 col-span-3 col-start-2">JHERSON</p>
+            <p class="m-auto lg:m-0 col-span-6">ALEJANDRO</p>
+            <p class="m-auto lg:m-0 col-span-2 col-start-3">ROJAS</p>
+            <div class="m-auto col-span-1 col-start-5 lg:hidden">
+                <ToggleTheme />
+            </div>
+        </header>
+        <p
+            aria-label="A que me dedico"
+            class="font-semibold col-span-6 lg:col-span-3 lg:row-start-5 grid justify-center items-center"
+        >
+            Desarrollador Full-Stack!!
+        </p>
+        <footer
+            class="text-white dark:text-black px-6 col-span-6 lg:col-span-3 lg:col-start-7 row-start-10 lg:row-start-5 grid justify-center items-center"
+        >
+            <button
+                aria-label="Boton para preguntas curiosas"
+                class="bg-black dark:bg-white font-semibold blu text-sm py-4 px-6 rounded-full"
+            >
+                Pregunta y lo veras
+            </button>
+        </footer>
+    </article>
+</section>
