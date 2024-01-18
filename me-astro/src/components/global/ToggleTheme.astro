@@ -3,7 +3,7 @@ import { IconLuna, IconSol } from "../others/Icons";
 ---
 
 <button
-    id="toggle-button"
+    id="toggle-theme"
     aria-label="Cambio de tema"
     class="text-black dark:text-white p-4"
 >
@@ -12,17 +12,16 @@ import { IconLuna, IconSol } from "../others/Icons";
 </button>
 
 <script>
-    const button: HTMLButtonElement | null =
-        document.querySelector("#toggle-button");
+    const button = document.getElementById("toggle-theme");
 
     if (button) {
         button.addEventListener("click", () => {
-            if (window.localStorage.theme === "light") {
+            if (localStorage.theme === "light") {
                 document.documentElement.classList.add("dark");
-                window.localStorage.theme = "dark";
+                localStorage.theme = "dark";
             } else {
                 document.documentElement.classList.remove("dark");
-                window.localStorage.theme = "light";
+                localStorage.theme = "light";
             }
         });
     }

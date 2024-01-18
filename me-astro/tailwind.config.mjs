@@ -6,7 +6,7 @@ export default {
 		extend: {
 			backgroundSize: {
 				"patron-u": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 1);",
-				"patron-m": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 11);",
+				"patron-m": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 12);",
 				"patron-u-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 1);",
 				"patron-m-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 5);",
 				"patron-m-xl": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 20);",
