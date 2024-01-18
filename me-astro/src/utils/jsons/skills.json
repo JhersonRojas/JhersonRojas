@@ -1,0 +1,172 @@
+[
+    {
+        "name": "javascript",
+        "type": "lenguaje",
+        "path": "/skills/javascript.svg"
+    },
+    {
+        "name": "typescript",
+        "type": "lenguaje",
+        "path": "/skills/typescript.svg"
+    },
+    {
+        "name": "python",
+        "type": "lenguaje",
+        "path": "/skills/python.svg"
+    },
+    {
+        "name": "csharp",
+        "type": "lenguaje",
+        "path": "/skills/csharp.svg"
+    },
+    {
+        "name": "bash",
+        "type": "lenguaje",
+        "path": "/skills/bash.svg"
+    },
+    {
+        "name": "astro",
+        "type": "framework",
+        "path": "/skills/astro.svg"
+    },
+    {
+        "name": "angular",
+        "type": "framework",
+        "path": "/skills/angular.svg"
+    },
+    {
+        "name": "ionic",
+        "type": "framework",
+        "path": "/skills/ionic.svg"
+    },
+    {
+        "name": "react",
+        "type": "framework",
+        "path": "/skills/react.svg"
+    },
+    {
+        "name": "nextjs",
+        "type": "framework",
+        "path": "/skills/nextjs.svg"
+    },
+    {
+        "name": "html",
+        "type": "estilos",
+        "path": "/skills/html.svg"
+    },
+    {
+        "name": "css",
+        "type": "estilos",
+        "path": "/skills/css.svg"
+    },
+    {
+        "name": "sass",
+        "type": "estilos",
+        "path": "/skills/sass.svg"
+    },
+    {
+        "name": "tailwind",
+        "type": "estilos",
+        "path": "/skills/tailwind.svg"
+    },
+    {
+        "name": "bootstrap",
+        "type": "estilos",
+        "path": "/skills/bootstrap.svg"
+    },
+    {
+        "name": "rest",
+        "type": "servicio",
+        "path": "/skills/rest.svg"
+    },
+    {
+        "name": "docker",
+        "type": "servicio",
+        "path": "/skills/docker.svg"
+    },
+    {
+        "name": "nginx",
+        "type": "servicio",
+        "path": "/skills/nginx.svg"
+    },
+    {
+        "name": "git",
+        "type": "servicio",
+        "path": "/skills/git.svg"
+    },
+    {
+        "name": "soap",
+        "type": "servicio",
+        "path": "/skills/soap.png"
+    },
+    {
+        "name": "mariadb",
+        "type": "db",
+        "path": "/skills/mariadb.svg"
+    },
+    {
+        "name": "mongo",
+        "type": "db",
+        "path": "/skills/mongo.svg"
+    },
+    {
+        "name": "mysql",
+        "type": "db",
+        "path": "/skills/mysql.svg"
+    },
+    {
+        "name": "postgres",
+        "type": "db",
+        "path": "/skills/postgres.svg"
+    },
+    {
+        "name": "linux",
+        "type": "servidor",
+        "path": "/skills/linux.svg"
+    },
+    {
+        "name": "dotnet",
+        "type": "servidor",
+        "path": "/skills/dotnet.svg"
+    },
+    {
+        "name": "express",
+        "type": "servidor",
+        "path": "/skills/express.svg"
+    },
+    {
+        "name": "prisma",
+        "type": "servidor",
+        "path": "/skills/prisma.svg"
+    },
+    {
+        "name": "sequelize",
+        "type": "servidor",
+        "path": "/skills/sequelize.svg"
+    },
+    {
+        "name": "xml",
+        "type": "otros",
+        "path": "/skills/xml.svg"
+    },
+    {
+        "name": "github",
+        "type": "contacto",
+        "path": "/skills/github.svg"
+    },
+    {
+        "name": "gitlab",
+        "type": "contacto",
+        "path": "/skills/gitlab.svg"
+    },
+    {
+        "name": "gmail",
+        "type": "contacto",
+        "path": "/skills/gmail.svg"
+    },
+    {
+        "name": "linkedin",
+        "type": "contacto",
+        "path": "/skills/linkedin.svg"
+    }
+]

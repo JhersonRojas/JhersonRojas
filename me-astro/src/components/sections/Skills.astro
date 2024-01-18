@@ -1,0 +1,209 @@
+---
+import skills from "../../utils/jsons/skills.json";
+---
+
+<section
+    id="skills"
+    aria-label="Sección de proyectos"
+    class="bg-patron-desing dark:bg-patron-desing-dark bg-patron-m lg:bg-patron-m-xl h-[calc(calc(100vi/6)*11)] lg:h-[calc(calc(70vi/9)*10)] mb-8 relative overflow-hidden"
+>
+    <article
+        id="skills-content"
+        aria-label="Grilla de trabajos"
+        class="w-full h-full grid grid-cols-6 lg:grid-cols-9 grid-rows-11 lg:grid-rows-10"
+    >
+        <header
+            class="bg-white dark:bg-black lg:col-span-3 lg:col-start-2 m-[1px] flex justify-center items-center"
+        >
+            <p class="text-4xl font-extrabold">Habilidades</p>
+        </header>
+
+        <section
+            class="col-span-4 row-span-2 col-start-6 row-start-2 grid grid-cols-4 grid-rows-2"
+        >
+            {
+                skills
+                    .filter((s) => s.type === "lenguaje")
+                    .map((skill, index) => {
+                        if (index == 0) {
+                            return (
+                                <>
+                                    <figure class="w-1/2 m-auto col-span-1">
+                                        <img
+                                            src={skill.path}
+                                            title={skill.name}
+                                            alt={`${skill.type} ${skill.name}`}
+                                            class="transition-all hover:scale-110"
+                                        />
+                                    </figure>
+                                    <header class="bg-white dark:bg-black col-span-3 row-span-1 m-[1px] flex justify-center items-center">
+                                        <p class="text-2xl font-extrabold">
+                                            Lenguajes
+                                        </p>
+                                    </header>
+                                </>
+                            );
+                        }
+
+                        return (
+                            <figure class="w-1/2 m-auto col-span-1">
+                                <img
+                                    src={skill.path}
+                                    title={skill.name}
+                                    alt={`${skill.type} ${skill.name}`}
+                                    class="transition-all hover:scale-110"
+                                />
+                            </figure>
+                        );
+                    })
+            }
+        </section>
+
+        <section
+            class="col-span-4 row-span-2 col-start-1 row-start-3 grid grid-cols-4 grid-rows-2"
+        >
+            <header
+                class="bg-white dark:bg-black col-span-3 m-[1px] flex justify-center items-center"
+            >
+                <p class="text-2xl font-extrabold">Frameworks</p>
+            </header>
+
+            {
+                skills
+                    .filter((s) => s.type === "framework")
+                    .map((skill) => (
+                        <figure class="w-1/2 m-auto col-span-1 ">
+                            <img
+                                src={skill.path}
+                                title={skill.name}
+                                alt={`${skill.type} ${skill.name}`}
+                                class={`${
+                                    skill.name === "nextjs" &&
+                                    "bg-white rounded-full"
+                                } transition-all hover:scale-110`}
+                            />
+                        </figure>
+                    ))
+            }
+        </section>
+
+        <section
+            class="col-span-4 row-span-2 col-start-6 row-start-5 grid grid-cols-4 grid-rows-2"
+        >
+            {
+                skills
+                    .filter((s) => s.type === "estilos")
+                    .map((skill, index) => {
+                        if (index == 0) {
+                            return (
+                                <>
+                                    <figure class="w-1/2 m-auto col-span-1">
+                                        <img
+                                            src={skill.path}
+                                            title={skill.name}
+                                            alt={`${skill.type} ${skill.name}`}
+                                            class="transition-all hover:scale-110"
+                                        />
+                                    </figure>
+                                    <header class="bg-white dark:bg-black col-span-3 row-span-1 m-[1px] flex justify-center items-center">
+                                        <p class="text-2xl font-extrabold">
+                                            Estilos
+                                        </p>
+                                    </header>
+                                </>
+                            );
+                        }
+
+                        return (
+                            <figure class="w-1/2 m-auto col-span-1">
+                                <img
+                                    src={skill.path}
+                                    title={skill.name}
+                                    alt={`${skill.type} ${skill.name}`}
+                                    class="transition-all hover:scale-110"
+                                />
+                            </figure>
+                        );
+                    })
+            }
+        </section>
+
+        <section
+            class="col-span-4 row-span-2 col-start-1 row-start-6 grid grid-cols-4 grid-rows-2"
+        >
+            <header
+                class="bg-white dark:bg-black col-span-3 m-[1px] flex justify-center items-center"
+            >
+                <p class="text-2xl font-extrabold">Servicios</p>
+            </header>
+
+            {
+                skills
+                    .filter((s) => s.type === "servicio")
+                    .map((skill) => (
+                        <figure class="w-1/2 m-auto col-span-1 ">
+                            <img
+                                src={skill.path}
+                                title={skill.name}
+                                alt={`${skill.type} ${skill.name}`}
+                                class="transition-all hover:scale-110"
+                            />
+                        </figure>
+                    ))
+            }
+        </section>
+
+        <section
+            class="col-span-4 row-span-2 col-start-6 row-start-8 grid grid-cols-4 grid-rows-2"
+        >
+            <header
+                class="bg-white dark:bg-black col-span-full m-[1px] flex justify-center items-center"
+            >
+                <p class="text-2xl font-extrabold">Bases de datos</p>
+            </header>
+
+            {
+                skills
+                    .filter((s) => s.type === "db")
+                    .map((skill) => (
+                        <figure class="w-1/2 m-auto col-span-1 ">
+                            <img
+                                src={skill.path}
+                                title={skill.name}
+                                alt={`${skill.type} ${skill.name}`}
+                                class="transition-all hover:scale-110"
+                            />
+                        </figure>
+                    ))
+            }
+        </section>
+
+        <section
+            class="col-span-4 row-span-2 col-start-1 row-start-9 grid grid-cols-4 grid-rows-2"
+        >
+            <header
+                class="bg-white dark:bg-black col-span-3 m-[1px] flex justify-center items-center"
+            >
+                <p class="text-2xl font-extrabold">Servidor</p>
+            </header>
+
+            {
+                skills
+                    .filter((s) => s.type === "servidor")
+                    .map((skill) => (
+                        <figure class="w-1/2 m-auto col-span-1 ">
+                            <img
+                                src={skill.path}
+                                title={skill.name}
+                                alt={`${skill.type} ${skill.name}`}
+                                class={`${
+                                    skill.name === "express" &&
+                                    "bg-white rounded-full p-2"
+                                } transition-all hover:scale-110`}
+                            />
+                        </figure>
+                    ))
+            }
+        </section>
+    </article>
+</section>

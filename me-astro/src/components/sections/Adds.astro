@@ -1,6 +1,36 @@
+---
+import skills from "../../utils/jsons/skills.json";
+---
+
 <section
     id="jobs"
     aria-label="Sección extra"
-    class="bg-patron-desing dark:bg-patron-desing-dark bg-patron-u lg:bg-patron-u-lg h-[calc(calc(100vi/6)*1)] lg:h-[calc(calc(70vi/9)*1)] my-8 overflow-hidden"
+    class="bg-patron-desing dark:bg-patron-desing-dark bg-patron-u lg:bg-patron-u-lg h-[calc(calc(100vi/6)*1)] lg:h-[calc(calc(70vi/9)*1)] mb-8 overflow-hidden"
 >
+    <ul
+        id="skills-adds-list"
+        class="w-full h-full grid grid-cols-6 lg:grid-cols-9 grid-rows-1"
+    >
+        {
+            skills.slice(0, 9).map((s) => (
+                <li class="m-auto w-1/2">
+                    <img src={s.path} alt={s.name} />
+                </li>
+            ))
+        }
+    </ul>
 </section>
+
+<script>
+    const width = window.innerWidth;
+    const skills = document.getElementById("skills-adds-list");
+
+    if (width < 1024 && skills) {
+        const children = skills.children;
+
+        for (let index = 0; index < children.length; index++) {
+            const child = children[index];
+            if (index > 5) child.classList.add("hidden");
+        }
+    }
+</script>
