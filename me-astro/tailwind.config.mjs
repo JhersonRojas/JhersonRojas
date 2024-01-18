@@ -9,7 +9,8 @@ export default {
 				"patron-m": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 11);",
 				"patron-u-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 1);",
 				"patron-m-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 5);",
-				"patron-m-xl": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 10);",
+				"patron-m-xl": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 20);",
+				"patron-m-xl2": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 10);",
 			},
 			backgroundImage: {
 				"patron-desing": "linear-gradient(rgb(161, 161, 170) 1px, transparent 1px), linear-gradient(to right, rgb(161, 161, 170) 1px, rgb(255, 255, 255) 1px);",
