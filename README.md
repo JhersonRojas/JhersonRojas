@@ -1,4 +1,4 @@
-<img src="./assets/fondo.gif" width="100%" />
+<img src="./public/fondo.gif" width="100%" />
 
 <h1 align="center" style="margin: 2rem 0 2rem 0;">
   Hi 👋, I'm Jherson Rojas
@@ -22,59 +22,92 @@
 
 ### 🌐 Connect with me:
 
-[<img src="./assets/job/linkedin.svg" height="50rem" width="50rem" />](https://co.linkedin.com/in/jhersonrojas/)
+[<img src="./public/skills/plataforms/linkedin.svg" height="60rem" width="60rem" />](https://co.linkedin.com/in/jhersonrojas/)
 
-<h2 align="center" style="margin: 1rem 0 2rem 0;">
+<h1 align="center" style="margin: 1rem 0 2rem 0;">
   Skills and knowledge in
-</h2>
+</h1>
 
 <h3 align="center">
   Languages with more experience
 </h3>
 <div align="center">
 
-[<img src="./assets/langs/js.svg" width="60rem" height="60rem" />](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[<img src="./assets/langs/ts.svg" width="53rem" height="53rem" />](https://www.typescriptlang.org/)
-[<img src="./assets/langs/py.svg" width="60rem" height="60rem" />](https://www.python.org/)
-[<img src="./assets/langs/cs.svg" width="60rem" height="60rem" />](https://learn.microsoft.com/es-es/dotnet/csharp/)
+[<img src="./public/skills/langs/javascript.svg" width="60rem" height="60rem" />](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[<img src="./public/skills/langs/typescript.svg" width="60rem" height="60rem" />](https://www.typescriptlang.org/)
+[<img src="./public/skills/langs/python.svg" width="60rem" height="60rem" />](https://www.python.org/)
+[<img src="./public/skills/langs/csharp.svg" width="60rem" height="60rem" />](https://learn.microsoft.com/es-es/dotnet/csharp/)
+[<img src="./public/skills/langs/bash.svg" width="60rem" height="60rem" />](https://www.gnu.org/software/bash/)
 
 </div>
 
+<h2 align="center">
+  Frontend Development
+</h2>
+
 <h3 align="center">
-  Frontend development
+  Frameworks and Libraries
 </h3>
 <div align="center">
 
-[<img src="./assets/frontend/sass.svg" width="60rem" height="60rem" />](https://sass-lang.com/)
-[<img src="./assets/frontend/css.svg" width="53rem" height="53rem" />](https://developer.mozilla.org/es/docs/Web/CSS)
-[<img src="./assets/frontend/angular.svg" width="60rem" height="60rem" />](https://angular.io/)
-[<img src="./assets/frontend/html.svg" width="60rem" height="60rem" />](https://html.com/)
-[<img src="./assets/frontend/react.svg" width="60rem" height="60rem" />](https://react.dev/)
+[<img src="./public/skills/frontend/react.svg" width="60rem" height="60rem" />](https://react.dev/)
+[<img src="./public/skills/frontend/next.svg" width="60rem" height="60rem" />](https://nextjs.org/)
+[<img src="./public/skills/frontend/astro.svg" width="60rem" height="60rem" />](https://astro.build/)
+[<img src="./public/skills/frontend/angular.svg" width="60rem" height="60rem" />](https://angular.dev/)
+[<img src="./public/skills/frontend/ionic.svg" width="53rem" height="53rem" />](https://ionicframework.com/)
 
 </div>
 
 <h3 align="center">
-  Backend development and databases
+  Styles Tools
 </h3>
 <div align="center">
 
-[<img src="./assets/backend/mariadb.svg" width="50rem" height="50rem" />](https://mariadb.org/)
-[<img src="./assets/backend/next.svg" width="50rem" height="50rem" style="background-color: white; border-radius: 50%;" />](https://nextjs.org/)
-[<img src="./assets/backend/docker.svg" width="55rem" height="55rem" />](https://www.docker.com/)
-[<img src="./assets/backend/git.svg" width="55rem" height="55rem" />](https://git-scm.com/)
-[<img src="./assets/backend/express.svg" width="35rem" height="35rem" style="background-color: white; padding: 0.5rem; border-radius: 50%;" />](https://expressjs.com/)
-[<img src="./assets/backend/mysql.svg" width="60rem" height="60rem" />](https://www.mysql.com/)
+[<img src="./public/skills/frontend/styles/css.svg" width="60rem" height="60rem" />](https://developer.mozilla.org/es/docs/Web/CSS)
+[<img src="./public/skills/frontend/styles/sass.svg" width="60rem" height="60rem" />](https://sass-lang.com/)
+[<img src="./public/skills/frontend/styles/tailwind.svg" width="55rem" height="55rem" />](https://tailwindcss.com/)
+[<img src="./public/skills/frontend/styles/bootstrap.svg" width="60rem" height="60rem" />](https://getbootstrap.com/)
+
+</div>
+
+<h2 align="center">
+  Backend Development
+</h2>
+
+<h3 align="center">
+  Server environments
+</h3>
+<div align="center">
+
+[<img src="./public/skills/backend/nginx.svg" width="60rem" height="60rem" />](https://www.nginx.com/)
+[<img src="./public/skills/backend/dotnet.svg" width="60rem" height="60rem" />](https://mariadb.org/)
+[<img src="./public/skills/backend/node.svg" width="60rem" height="60rem" />](https://mariadb.org/)
 
 </div>
 
 <h3 align="center">
+  Database Managers and ORM's
+</h3>
+<div align="center">
+
+[<img src="./public/skills/backend/database/mariadb.svg" width="60rem" height="60rem" />](https://mariadb.org/)
+[<img src="./public/skills/backend/database/mysql.svg" width="60rem" height="60rem" />](https://www.mysql.com/)
+[<img src="./public/skills/backend/database/mongo.svg" width="60rem" height="60rem" />](https://www.mongodb.com/)
+[<img src="./public/skills/backend/database/postgres.svg" width="60rem" height="60rem" />](https://www.postgresql.org/)
+[<img src="./public/skills/backend/orm/prisma.svg" width="60rem" height="60rem" />](https://www.prisma.io/)
+[<img src="./public/skills/backend/orm/sequelize.svg" width="60rem" height="60rem" />](https://sequelize.org/)
+
+</div>
+
+<h2 align="center">
   Another tools
-</h3>
+</h2>
 <div align="center">
 
-[<img src="./assets/others/vercel.svg" width="50rem" height="50rem" />](https://vercel.com/)
-[<img src="./assets/others/jwt.svg" width="40rem" height="40rem" />](https://jwt.io/)
-[<img src="./assets/others/linux.svg" width="50rem" height="50rem" />](https://www.google.com/)
+[<img src="./public/skills/others/docker.svg" width="60rem" height="60rem" />](https://docker.com/)
+[<img src="./public/skills/others/git.svg" width="60rem" height="60rem" />](https://git-scm.com/)
+[<img src="./public/skills/others/jwt.svg" width="60rem" height="60rem" />](https://jwt.io/)
+[<img src="./public/skills/others/linux.svg" width="60rem" height="60rem" />](https://www.linux.org/)
 
 </div>
 
