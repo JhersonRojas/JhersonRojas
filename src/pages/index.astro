@@ -1,48 +1,47 @@
 ---
-import { IconLogo } from "../components/others/Icons";
-import Layout from "../layouts/Layout.astro";
+import { IconLogo } from "../components/others/Icons"
+import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="JhersonRojas.dev">
   <main
     aria-label="Contenedor principal de la página"
-    class="dark:bg-black bg-white w-screen h-screen py-6 relative overflow-x-hidden"
+    class="relative h-screen w-screen overflow-x-hidden bg-white py-6 dark:bg-black"
   >
-    <div class="bg-pattern w-full h-full absolute top-0"></div>
+    <div class="bg-pattern absolute top-0 h-full w-full"></div>
     <IconLogo
-      className="fill-white dark:fill-zinc-800 opacity-75 h-full z-0 absolute bottom-0 right-0 animate-pulse"
+      className="absolute bottom-0 right-0 z-0 h-full animate-pulse fill-white opacity-75 dark:fill-zinc-800"
     />
     <article
-      class="text-white py-12 w-full top-0 h-full px-6 sm:px-12 grid items-center absolute"
+      class="absolute top-0 grid h-full w-full items-center px-6 py-12 text-white sm:px-12"
     >
-      <div class="grid gap-4 sm:grid-cols-5 sm:grid-rows-2 h-3/4">
-        <section class="bg-black/50 grid border-min border-gray-600">
+      <div class="grid h-3/4 gap-4 sm:grid-cols-5 sm:grid-rows-2">
+        <section class="grid border-min border-gray-600 bg-black/50">
           <img
             src="/profile.png"
             alt="Foto de perfil"
-            class="w-1/2 sm:w-3/4 rounded-full m-auto"
+            class="m-auto w-1/2 rounded-full sm:w-3/4"
           />
         </section>
         <section
-          class="border-min border-gray-600 hidden sm:block col-span-1 sm:col-span-3"
+          class="col-span-1 hidden border-min border-gray-600 sm:col-span-3 sm:block"
         >
         </section>
-        <section class="border-min border-gray-600 hidden sm:block"></section>
+        <section class="hidden border-min border-gray-600 sm:block"></section>
         <section
-          class="bg-black/50 grid items-center justify-center border-min border-gray-600 col-span-1 sm:col-span-3"
+          class="col-span-1 grid items-center justify-center border-min border-gray-600 bg-black/50 sm:col-span-3"
         >
           <article class="px-6 sm:px-0">
-            <h2 class="text-2xl sm:text-5xl font-extrabold mb-2">
+            <h2 class="mb-2 text-2xl font-extrabold sm:text-5xl">
               Desarrollador FullStack
             </h2>
             <cite class="text-xs sm:text-sm">
-              "Cuando sus pixeles conectaron con mi mirada, sabía que debía ser
-              mía."
+              "Cuando sus pixeles conectaron con mi mirada, sabía que debía ser mía."
             </cite>
           </article>
         </section>
         <section
-          class="min-h-[150px] bg-pixel bg-cover bg-[20%] border-min border-gray-600 w-full col-span-1 sm:col-span-2"
+          class="col-span-1 min-h-[150px] w-full border-min border-gray-600 bg-pixel bg-cover bg-[20%] sm:col-span-2"
         >
         </section>
       </div>

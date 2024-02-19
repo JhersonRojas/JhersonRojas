@@ -1,37 +1,28 @@
 ---
-import { IconLogo } from "../others/Icons";
+import { IconLogo } from "../others/Icons"
 ---
 
-<nav class="w-full h-20 2xl:h-24 flex items-center justify-between">
-    <a
-        href="/"
-        class="mx-auto lg:mx-0 flex items-end transition-all hover:opacity-80"
-    >
-        <p class="flex items-center">
-            <b class="font-extrabold text-4xl">ROJ</b>
-            <IconLogo className="fill-black dark:fill-white w-8 h-8" />
-            <b class="font-extrabold text-4xl">S</b>
-        </p>
-        <small class="text-xl">.dev</small>
-    </a>
-    <ul class="w-1/2 font-semibold hidden lg:flex justify-between">
-        <li class="transition-all hover:opacity-80">
-            <a href="/" title="Inicio del portafolio">Inicio</a>
-        </li>
-        <li class="transition-all hover:opacity-80">
-            <a href="#jobs" title="Experiencias y trabajos realizados">
-                Proyectos
-            </a>
-        </li>
-        <li class="transition-all hover:opacity-80">
-            <a href="#skills" title="Conocimientos y tecnologias">
-                Habilidades
-            </a>
-        </li>
-        <li class="transition-all hover:opacity-80">
-            <a href="#contact" title="Donde encontrarme y contacto">
-                Contacto
-            </a>
-        </li>
-    </ul>
+<nav class="flex h-20 w-full items-center justify-between 2xl:h-24">
+  <a href="/" class="mx-auto flex items-end transition-all hover:opacity-80 lg:mx-0">
+    <p class="flex items-center">
+      <b class="text-4xl font-extrabold">ROJ</b>
+      <IconLogo className="h-8 w-8 fill-black dark:fill-white" />
+      <b class="text-4xl font-extrabold">S</b>
+    </p>
+    <small class="text-xl">.dev</small>
+  </a>
+  <ul class="hidden w-1/2 justify-between font-semibold lg:flex">
+    <li class="transition-all hover:opacity-80">
+      <a href="/" title="Inicio del portafolio">Inicio</a>
+    </li>
+    <li class="transition-all hover:opacity-80">
+      <a href="#jobs" title="Experiencias y trabajos realizados"> Proyectos </a>
+    </li>
+    <li class="transition-all hover:opacity-80">
+      <a href="#skills" title="Conocimientos y tecnologias"> Habilidades </a>
+    </li>
+    <li class="transition-all hover:opacity-80">
+      <a href="#contact" title="Donde encontrarme y contacto"> Contacto </a>
+    </li>
+  </ul>
 </nav>

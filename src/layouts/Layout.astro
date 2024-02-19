@@ -1,63 +1,53 @@
 ---
 interface Props {
-    title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta
-            name="description"
-            content="Portafolio de desarrollador Full-Stack"
-        />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Portafolio de desarrollador Full-Stack" />
 
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <title>{title}</title>
+    <title>{title}</title>
 
-        <script>
-            const themeClause =
-                localStorage.theme === "dark" ||
-                (!("theme" in localStorage) &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches);
-            if (themeClause) document.documentElement.classList.add("dark");
-            else document.documentElement.classList.remove("dark");
-        </script>
-    </head>
-    <body>
-        <slot />
-    </body>
+    <script>
+      const themeClause =
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      if (themeClause) document.documentElement.classList.add("dark")
+      else document.documentElement.classList.remove("dark")
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-    html,
-    body,
-    main {
-        scroll-behavior: smooth;
-    }
+  html,
+  body,
+  main {
+    scroll-behavior: smooth;
+  }
 
-    .bg-pattern {
-        background-size: 100px 100px;
-        background-image: url(/bg-pattern.png);
-        -webkit-mask-image: linear-gradient(
-            to bottom,
-            transparent,
-            10%,
-            white,
-            90%,
-            transparent
-        );
-        mask-image: linear-gradient(
-            to bottom,
-            transparent,
-            10%,
-            white,
-            90%,
-            transparent
-        );
-    }
+  .bg-pattern {
+    background-size: 100px 100px;
+    background-image: url(/bg-pattern.png);
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      10%,
+      white,
+      90%,
+      transparent
+    );
+    mask-image: linear-gradient(to bottom, transparent, 10%, white, 90%, transparent);
+  }
 </style>

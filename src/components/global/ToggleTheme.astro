@@ -1,28 +1,28 @@
 ---
-import { IconLuna, IconSol } from "../others/Icons";
+import { IconLuna, IconSol } from "../others/Icons"
 ---
 
 <button
-    id="toggle-theme"
-    aria-label="Cambio de tema"
-    class="text-black dark:text-white p-4"
+  id="toggle-theme"
+  aria-label="Cambio de tema"
+  class="p-4 text-black dark:text-white"
 >
-    <IconLuna className="fill-white w-6 h-6 hidden dark:block" />
-    <IconSol className="fill-black w-6 h-6 dark:hidden" />
+  <IconLuna className="hidden h-6 w-6 fill-white dark:block" />
+  <IconSol className="h-6 w-6 fill-black dark:hidden" />
 </button>
 
 <script>
-    const button = document.getElementById("toggle-theme");
+  const button = document.getElementById("toggle-theme")
 
-    if (button) {
-        button.addEventListener("click", () => {
-            if (localStorage.theme === "light") {
-                document.documentElement.classList.add("dark");
-                localStorage.theme = "dark";
-            } else {
-                document.documentElement.classList.remove("dark");
-                localStorage.theme = "light";
-            }
-        });
-    }
+  if (button) {
+    button.addEventListener("click", () => {
+      if (localStorage.theme === "light") {
+        document.documentElement.classList.add("dark")
+        localStorage.theme = "dark"
+      } else {
+        document.documentElement.classList.remove("dark")
+        localStorage.theme = "light"
+      }
+    })
+  }
 </script>
