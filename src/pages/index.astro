@@ -13,31 +13,36 @@ import Layout from "../layouts/Layout.astro";
       className="fill-white dark:fill-zinc-800 opacity-75 h-full z-0 absolute bottom-0 right-0 animate-pulse"
     />
     <article
-      class="text-white py-12 w-full top-0 h-full px-12 grid items-center absolute"
+      class="text-white py-12 w-full top-0 h-full px-6 sm:px-12 grid items-center absolute"
     >
-      <div class="grid gap-4 grid-cols-5 grid-rows-2 h-3/4">
+      <div class="grid gap-4 sm:grid-cols-5 sm:grid-rows-2 h-3/4">
         <section class="bg-black/50 grid border-min border-gray-600">
           <img
             src="/profile.png"
             alt="Foto de perfil"
-            class="w-3/4 rounded-full m-auto"
+            class="w-1/2 sm:w-3/4 rounded-full m-auto"
           />
         </section>
-        <section class="border-min border-gray-600 col-span-3"></section>
-        <section class="border-min border-gray-600"></section>
         <section
-          class="bg-black/50 grid items-center justify-center border-min border-gray-600 col-span-3"
+          class="border-min border-gray-600 hidden sm:block col-span-1 sm:col-span-3"
         >
-          <article>
-            <h2 class="text-5xl font-extrabold">Desarrollador FullStack</h2>
-            <cite class="text-sm">
+        </section>
+        <section class="border-min border-gray-600 hidden sm:block"></section>
+        <section
+          class="bg-black/50 grid items-center justify-center border-min border-gray-600 col-span-1 sm:col-span-3"
+        >
+          <article class="px-6 sm:px-0">
+            <h2 class="text-2xl sm:text-5xl font-extrabold mb-2">
+              Desarrollador FullStack
+            </h2>
+            <cite class="text-xs sm:text-sm">
               "Cuando sus pixeles conectaron con mi mirada, sabía que debía ser
               mía."
             </cite>
           </article>
         </section>
         <section
-          class="bg-pixel bg-cover bg-[20%] border-min border-gray-600 col-span-2"
+          class="min-h-[150px] bg-pixel bg-cover bg-[20%] border-min border-gray-600 w-full col-span-1 sm:col-span-2"
         >
         </section>
       </div>
