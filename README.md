@@ -39,7 +39,7 @@
 [<img src="./public/skills/langs/csharp.svg" width="60rem" height="60rem" />](https://learn.microsoft.com/es-es/dotnet/csharp/)
 [<img src="./public/skills/langs/bash.svg" width="60rem" height="60rem" />](https://www.gnu.org/software/bash/)
 
-</div>
+</div><br />
 
 <h2 align="center">
   Frontend Development
@@ -68,7 +68,7 @@
 [<img src="./public/skills/frontend/styles/tailwind.svg" width="55rem" height="55rem" />](https://tailwindcss.com/)
 [<img src="./public/skills/frontend/styles/bootstrap.svg" width="60rem" height="60rem" />](https://getbootstrap.com/)
 
-</div>
+</div><br />
 
 <h2 align="center">
   Backend Development
@@ -97,7 +97,7 @@
 [<img src="./public/skills/backend/orm/prisma.svg" width="60rem" height="60rem" />](https://www.prisma.io/)
 [<img src="./public/skills/backend/orm/sequelize.svg" width="60rem" height="60rem" />](https://sequelize.org/)
 
-</div>
+</div><br />
 
 <h2 align="center">
   Another tools
@@ -109,11 +109,11 @@
 [<img src="./public/skills/others/jwt.svg" width="60rem" height="60rem" />](https://jwt.io/)
 [<img src="./public/skills/others/linux.svg" width="60rem" height="60rem" />](https://www.linux.org/)
 
-</div>
+</div><br />
 
-<h3 align="center">
+<h2 align="center">
   📊 GitHub Stats
-</h3>
+</h2>
 <div align="center">
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=JhersonRojas&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact) <br /> <br />

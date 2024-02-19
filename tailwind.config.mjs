@@ -4,17 +4,13 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
-			backgroundSize: {
-				"patron-u": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 1);",
-				"patron-m": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 12);",
-				"patron-u-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 1);",
-				"patron-m-lg": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 5);",
-				"patron-m-xl": "calc(calc(100% - 1px) / 6) calc(calc(100% - 1px) / 20);",
-				"patron-m-xl2": "calc(calc(100% - 1px) / 9) calc(calc(100% - 1px) / 10);",
+			borderWidth: {
+				"min": "1px"
 			},
 			backgroundImage: {
-				"patron-desing": "linear-gradient(rgb(161, 161, 170) 1px, transparent 1px), linear-gradient(to right, rgb(161, 161, 170) 1px, rgb(255, 255, 255) 1px);",
-				"patron-desing-dark": "linear-gradient(rgb(39, 39, 42) 1px, transparent 1px), linear-gradient(to right, rgb(39, 39, 42) 1px, rgb(0, 0, 0) 1px);"
+				"pixel": "url(/fondo.gif);",
+				"patron-design": "linear-gradient(rgb(161, 161, 170) 1px, transparent 1px), linear-gradient(to right, rgb(161, 161, 170) 1px, rgb(255, 255, 255) 1px);",
+				"patron-design-dark": "linear-gradient(rgb(39, 39, 42) 1px, transparent 1px), linear-gradient(to right, rgb(39, 39, 42) 1px, rgb(0, 0, 0) 1px);",
 			}
 		},
 	},

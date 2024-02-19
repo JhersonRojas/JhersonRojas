@@ -1,23 +1,46 @@
 ---
-import Navigation from "../components/global/Navigation.astro";
-import Adds from "../components/sections/Adds.astro";
-import Home from "../components/sections/Home.astro";
-import Jobs from "../components/sections/Jobs.astro";
+import { IconLogo } from "../components/others/Icons";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Rojas.dev">
+<Layout title="JhersonRojas.dev">
   <main
     aria-label="Contenedor principal de la página"
-    class="bg-white dark:bg-black text-black dark:text-white min-w-screen min-h-screen"
+    class="dark:bg-black bg-white w-screen h-screen py-6 relative overflow-x-hidden"
   >
-    <header class="lg:max-w-[70vw] lg:w-[70vw] mx-auto overflow-y-auto">
-      <Navigation />
-    </header>
-    <article class="lg:max-w-[70vw] lg:w-[70vw] mx-auto overflow-y-auto">
-      <Home />
-      <Adds />
-      <Jobs />
+    <div class="bg-pattern w-full h-full absolute top-0"></div>
+    <IconLogo
+      className="fill-white dark:fill-zinc-800 opacity-75 h-full z-0 absolute bottom-0 right-0 animate-pulse"
+    />
+    <article
+      class="text-white py-12 w-full top-0 h-full px-12 grid items-center absolute"
+    >
+      <div class="grid gap-4 grid-cols-5 grid-rows-2 h-3/4">
+        <section class="bg-black/50 grid border-min border-gray-600">
+          <img
+            src="/profile.png"
+            alt="Foto de perfil"
+            class="w-3/4 rounded-full m-auto"
+          />
+        </section>
+        <section class="border-min border-gray-600 col-span-3"></section>
+        <section class="border-min border-gray-600"></section>
+        <section
+          class="bg-black/50 grid items-center justify-center border-min border-gray-600 col-span-3"
+        >
+          <article>
+            <h2 class="text-5xl font-extrabold">Desarrollador FullStack</h2>
+            <cite class="text-sm">
+              "Cuando sus pixeles conectaron con mi mirada, sabía que debía ser
+              mía."
+            </cite>
+          </article>
+        </section>
+        <section
+          class="bg-pixel bg-cover bg-[20%] border-min border-gray-600 col-span-2"
+        >
+        </section>
+      </div>
     </article>
   </main>
 </Layout>
