@@ -1,50 +1,70 @@
 ---
-import { IconLogo } from "../components/others/Icons"
+import ToggleTheme from "../components/global/ToggleTheme.astro"
+import { IconGithub } from "../components/others/Icons"
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="JhersonRojas.dev">
+<Layout title="Jherson Rojas dev">
   <main
-    aria-label="Contenedor principal de la página"
-    class="relative h-screen w-screen overflow-x-hidden bg-white py-6 dark:bg-black"
+    aria-label="Main container for the portfolio"
+    class="relative h-screen overflow-x-hidden bg-white dark:bg-black"
   >
-    <div class="bg-pattern absolute top-0 h-full w-full"></div>
-    <IconLogo
-      className="absolute bottom-0 right-0 z-0 h-full animate-pulse fill-white opacity-75 dark:fill-zinc-800"
-    />
-    <article
-      class="absolute top-0 grid h-full w-full items-center px-6 py-12 text-white sm:px-12"
+    <header
+      class="sticky top-0 z-10 flex h-[15vh] min-h-[100px] items-center justify-end px-6"
     >
-      <div class="grid h-3/4 gap-4 sm:grid-cols-5 sm:grid-rows-2">
-        <section class="grid border-min border-gray-600 bg-black/50">
-          <img
-            src="/profile.png"
-            alt="Foto de perfil"
-            class="m-auto w-1/2 rounded-full sm:w-3/4"
-          />
-        </section>
-        <section
-          class="col-span-1 hidden border-min border-gray-600 sm:col-span-3 sm:block"
+      <nav class="flex items-center gap-6 text-black *:transition-all dark:text-white">
+        <li class="rounded-md px-5 py-3 hover:underline dark:hover:bg-slate-900">
+          Welcome
+        </li>
+        <li class="rounded-md px-5 py-3 hover:underline dark:hover:bg-slate-900">
+          Projects
+        </li>
+        <li class="rounded-md px-5 py-3 hover:underline dark:hover:bg-slate-900">
+          Skills
+        </li>
+        <li class="rounded-md px-5 py-3 hover:underline dark:hover:bg-slate-900">
+          Contact
+        </li>
+        <li
+          class="flex items-center justify-center rounded-md p-3 hover:underline dark:hover:bg-slate-900"
         >
-        </section>
-        <section class="hidden border-min border-gray-600 sm:block"></section>
-        <section
-          class="col-span-1 grid items-center justify-center border-min border-gray-600 bg-black/50 sm:col-span-3"
+          <ToggleTheme />
+        </li>
+        <a
+          href="https://github.com/JhersonRojas"
+          class="flex items-center justify-center rounded-md p-3 hover:underline dark:hover:bg-slate-900"
         >
-          <article class="px-6 sm:px-0">
-            <h2 class="mb-2 text-2xl font-extrabold sm:text-5xl">
-              Desarrollador FullStack
-            </h2>
-            <cite class="text-xs sm:text-sm">
-              "Cuando sus pixeles conectaron con mi mirada, sabía que debía ser mía."
-            </cite>
-          </article>
-        </section>
-        <section
-          class="col-span-1 min-h-[150px] w-full border-min border-gray-600 bg-pixel bg-cover bg-[20%] sm:col-span-2"
-        >
-        </section>
-      </div>
+          <IconGithub name="Icon for github" className="size-6" />
+        </a>
+      </nav>
+    </header>
+    <article
+      aria-label="welcome section"
+      class="relative h-[85vh] min-h-[600px] w-full text-black dark:text-white"
+    >
+      <div class="bg-pattern absolute top-0 h-full w-full"></div>
+      <section class="absolute left-0 top-1/4 z-10 grid w-full min-w-fit">
+        <h1 class="mx-auto mb-4 font-poppins text-5xl tracking-tighter">
+          Hi, I'm Jherson Rojas
+        </h1>
+        <p class="mx-auto mb-4 text-gray-500 dark:text-gray-400">
+          Full-Stack Developer passionate about creating elegant and efficient solutions.
+        </p>
+        <div class="mx-auto flex h-min gap-4">
+          <a
+            href="#contact"
+            class="rounded-md border-min border-slate-800 bg-slate-900 px-6 py-2 text-white"
+          >
+            Contact me
+          </a>
+          <a
+            href="#projects"
+            class="rounded-md border-min border-slate-200 bg-white px-6 py-2 text-black"
+          >
+            More ...
+          </a>
+        </div>
+      </section>
     </article>
   </main>
 </Layout>

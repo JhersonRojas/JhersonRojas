@@ -1,14 +1,16 @@
 ---
-import { IconLuna, IconSol } from "../others/Icons"
+import { IconMoon, IconSun } from "../others/Icons"
+
+interface Props {
+  className?: string
+}
+
+const { className } = Astro.props
 ---
 
-<button
-  id="toggle-theme"
-  aria-label="Cambio de tema"
-  class="p-4 text-black dark:text-white"
->
-  <IconLuna className="hidden h-6 w-6 fill-white dark:block" />
-  <IconSol className="h-6 w-6 fill-black dark:hidden" />
+<button id="toggle-theme" aria-label="Change theme button" class={className}>
+  <IconMoon className="hidden size-6 fill-white dark:block" />
+  <IconSun className="size-6 fill-black dark:hidden" />
 </button>
 
 <script>
