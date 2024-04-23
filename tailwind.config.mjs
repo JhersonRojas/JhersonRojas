@@ -14,8 +14,8 @@ export default {
                     "linear-gradient(rgb(39, 39, 42) 1px, transparent 1px), linear-gradient(to right, rgb(39, 39, 42) 1px, rgb(0, 0, 0) 1px);",
             },
             fontFamily: {
-                poppins: ["Poppins", "sains-serif"]
-            }
+                poppins: ["Poppins", "sains-serif"],
+            },
         },
     },
     plugins: [],
