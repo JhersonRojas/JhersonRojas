@@ -1,0 +1,188 @@
+---
+import { Image } from "astro:assets"
+
+import angularimg from "../../../assets/skills/frontend/angular.svg"
+import astroimg from "../../../assets/skills/frontend/astro.svg"
+import ionicimg from "../../../assets/skills/frontend/ionic.svg"
+import nextimg from "../../../assets/skills/frontend/next.svg"
+import reactimg from "../../../assets/skills/frontend/react.svg"
+
+import dotnetimg from "../../../assets/skills/backend/dotnet.svg"
+import nginximg from "../../../assets/skills/backend/nginx.svg"
+import nodeimg from "../../../assets/skills/backend/node.svg"
+
+import bootstrapimg from "../../../assets/skills/frontend/styles/bootstrap.svg"
+import cssimg from "../../../assets/skills/frontend/styles/css.svg"
+import sassimg from "../../../assets/skills/frontend/styles/sass.svg"
+import tailwindimg from "../../../assets/skills/frontend/styles/tailwind.svg"
+
+import mariaimg from "../../../assets/skills/backend/database/mariadb.svg"
+import mongoimg from "../../../assets/skills/backend/database/mongo.svg"
+import mysqlimg from "../../../assets/skills/backend/database/mysql.svg"
+import postgresimg from "../../../assets/skills/backend/database/postgres.svg"
+import prismaimg from "../../../assets/skills/backend/orm/prisma.svg"
+import sequelizeimg from "../../../assets/skills/backend/orm/sequelize.svg"
+---
+
+<article
+  aria-label="Section for my skills"
+  class="relative mb-8 h-min w-full px-4 text-white sm:px-0"
+>
+  <header class="mb-8 text-center">
+    <h2 class="font-poppins text-2xl sm:text-3xl">Skills and Knolowedges</h2>
+  </header>
+  <section
+    class="mx-auto grid w-full grid-rows-1 gap-x-4 gap-y-6 sm:w-3/4 sm:grid-cols-2"
+  >
+    <article class="h-full w-full">
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Frontend</h3>
+      <figure class="border-opaque flex gap-4 rounded-md border-min p-6 *:transition-all">
+        <Image
+          alt="React"
+          width={50}
+          height={50}
+          src={reactimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Nextjs"
+          width={50}
+          height={50}
+          src={nextimg}
+          class="size-12 rounded-full bg-white lg:hover:scale-110"
+        />
+        <Image
+          alt="Astro"
+          width={50}
+          height={50}
+          src={astroimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Ionic"
+          width={50}
+          height={50}
+          src={ionicimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Angular"
+          width={50}
+          height={50}
+          src={angularimg}
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
+    <article class="h-full w-full">
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Backend</h3>
+      <figure
+        class="border-opaque flex justify-end gap-4 rounded-md border-min p-6 *:transition-all"
+      >
+        <Image
+          alt="Nginx"
+          width={50}
+          height={50}
+          src={nginximg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt=".Net"
+          width={50}
+          height={50}
+          src={dotnetimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Node.js"
+          width={50}
+          height={50}
+          src={nodeimg}
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
+    <article class="h-full w-full">
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Styles</h3>
+      <figure class="border-opaque flex gap-4 rounded-md border-min p-6 *:transition-all">
+        <Image
+          alt="Css"
+          width={50}
+          height={50}
+          src={cssimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Sass"
+          width={50}
+          height={50}
+          src={sassimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Tailwind"
+          width={50}
+          height={50}
+          src={tailwindimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Bootstrap"
+          width={50}
+          height={50}
+          src={bootstrapimg}
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
+    <article class="h-full w-full">
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Database and ORM's</h3>
+      <figure
+        class="border-opaque flex justify-end gap-4 rounded-md border-min p-6 *:transition-all"
+      >
+        <Image
+          alt="Mariadb"
+          width={50}
+          height={50}
+          src={mariaimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Mysql"
+          width={50}
+          height={50}
+          src={mysqlimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Mongo db"
+          width={50}
+          height={50}
+          src={mongoimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="PostgreSql"
+          width={50}
+          height={50}
+          src={postgresimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Prisma ORM"
+          width={50}
+          height={50}
+          src={prismaimg}
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Sequelize ORM"
+          width={50}
+          height={50}
+          src={sequelizeimg}
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
+  </section>
+</article>

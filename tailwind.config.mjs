@@ -10,6 +10,12 @@ export default {
             borderWidth: {
                 min: "1px",
             },
+            borderColor: {
+                opaque: "#22252C",
+            },
+            backgroundColor: {
+                opaque: "#22252C",
+            },
             backgroundImage: {
                 "patron-design":
                     "linear-gradient(rgb(161, 161, 170) 1px, transparent 1px), linear-gradient(to right, rgb(161, 161, 170) 1px, rgb(255, 255, 255) 1px);",

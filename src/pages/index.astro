@@ -1,6 +1,8 @@
 ---
 import { IconGithub } from "../components/others/Icons"
+import Footer from "../components/pages/home/Footer.astro"
 import Projects from "../components/pages/home/Projects.astro"
+import Skills from "../components/pages/home/Skills.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
@@ -27,9 +29,12 @@ import Layout from "../layouts/Layout.astro"
           >
             Projects
           </a>
-          <li class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black">
+          <a
+            href="#skills"
+            class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black"
+          >
             Skills
-          </li>
+          </a>
           <li class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black">
             Contact
           </li>
@@ -44,7 +49,7 @@ import Layout from "../layouts/Layout.astro"
     </header>
     <article
       aria-label="welcome section"
-      class="relative h-[90vh] min-h-[600px] w-full text-white"
+      class="relative mb-12 h-[90vh] min-h-[600px] w-full text-white"
     >
       <div class="bg-pattern absolute top-0 h-full w-full"></div>
       <section class="absolute left-0 top-1/3 z-10 grid w-full min-w-fit px-6 sm:px-0">
@@ -57,7 +62,7 @@ import Layout from "../layouts/Layout.astro"
         <div class="mx-auto flex h-min items-center gap-4 [&_*]:transition-all">
           <a
             href="#contact"
-            class="rounded-md border-min border-neutral-800 bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
+            class="border-opaque rounded-md border-min bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
           >
             Contact me
           </a>
@@ -72,5 +77,8 @@ import Layout from "../layouts/Layout.astro"
     </article>
     <section id="projects"></section>
     <Projects />
+    <section id="skills"></section>
+    <Skills />
+    <Footer />
   </main>
 </Layout>
