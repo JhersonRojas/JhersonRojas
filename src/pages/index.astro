@@ -1,40 +1,42 @@
 ---
-import ToggleTheme from "../components/global/ToggleTheme.astro"
 import { IconGithub } from "../components/others/Icons"
+import Projects from "../components/pages/home/Projects.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Jherson Rojas dev">
   <main
     aria-label="Main container for the portfolio"
-    class="relative h-screen overflow-x-hidden bg-white dark:bg-black"
+    class="custombar relative h-screen overflow-x-hidden bg-black"
   >
+    <section id="welcome"></section>
     <header
-      class="sticky top-0 z-50 flex h-min items-center justify-end bg-white px-6 py-4 dark:bg-black/80"
+      class="sticky top-0 z-50 flex h-min items-center justify-end bg-black/80 px-6 py-4"
     >
-      <nav class="flex items-center gap-6 text-black dark:text-white">
+      <nav class="flex items-center gap-6 text-white">
         <menu class="hidden gap-6 *:transition-all sm:flex">
-          <li class="rounded-md px-5 py-3 dark:hover:bg-white dark:hover:text-black">
+          <a
+            href="#welcome"
+            class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black"
+          >
             Welcome
-          </li>
-          <li class="rounded-md px-5 py-3 dark:hover:bg-white dark:hover:text-black">
+          </a>
+          <a
+            href="#projects"
+            class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black"
+          >
             Projects
-          </li>
-          <li class="rounded-md px-5 py-3 dark:hover:bg-white dark:hover:text-black">
+          </a>
+          <li class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black">
             Skills
           </li>
-          <li class="rounded-md px-5 py-3 dark:hover:bg-white dark:hover:text-black">
+          <li class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black">
             Contact
           </li>
         </menu>
-        <li
-          class="flex items-center justify-center rounded-md p-3 transition-all dark:hover:bg-white dark:hover:text-black"
-        >
-          <ToggleTheme />
-        </li>
         <a
           href="https://github.com/JhersonRojas"
-          class="flex items-center justify-center rounded-md p-3 transition-all dark:hover:bg-white dark:hover:text-black"
+          class="flex items-center justify-center rounded-md p-3 transition-all lg:hover:bg-white lg:hover:text-black"
         >
           <IconGithub name="Icon for github" className="size-6" />
         </a>
@@ -42,31 +44,33 @@ import Layout from "../layouts/Layout.astro"
     </header>
     <article
       aria-label="welcome section"
-      class="relative h-[90vh] min-h-[600px] w-full text-black dark:text-white"
+      class="relative h-[90vh] min-h-[600px] w-full text-white"
     >
       <div class="bg-pattern absolute top-0 h-full w-full"></div>
       <section class="absolute left-0 top-1/3 z-10 grid w-full min-w-fit px-6 sm:px-0">
         <h1 class="mx-auto mb-4 font-poppins text-5xl tracking-tighter">
           Hi, I'm Jherson Rojas
         </h1>
-        <p class="mx-auto mb-4 text-gray-500 dark:text-gray-400">
+        <p class="mx-auto mb-4 text-gray-300">
           Full-Stack Developer passionate about creating elegant and efficient solutions.
         </p>
-        <div class="mx-auto flex h-min gap-4">
+        <div class="mx-auto flex h-min items-center gap-4 [&_*]:transition-all">
           <a
             href="#contact"
-            class="rounded-md border-min border-slate-800 bg-slate-900 px-6 py-2 text-white"
+            class="rounded-md border-min border-neutral-800 bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
           >
             Contact me
           </a>
           <a
             href="#projects"
-            class="rounded-md border-min border-slate-200 bg-white px-6 py-2 text-black"
+            class="rounded-md bg-white px-6 py-2 text-black lg:hover:bg-black lg:hover:text-white"
           >
             More ...
           </a>
         </div>
       </section>
     </article>
+    <section id="projects"></section>
+    <Projects />
   </main>
 </Layout>

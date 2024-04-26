@@ -10,19 +10,13 @@ const { title } = Astro.props
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Portafolio de desarrollador Full-Stack" />
-
+    <meta name="description" content="Portfolio of Jherson Rojas developer Full-Stack" />
+    <meta
+      name="keywords"
+      content="web,api,frontend,backend,fullstack,javascript,typescript,csharp,bash,developer"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-
-    <script>
-      const themeClause =
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      if (themeClause) document.documentElement.classList.add("dark")
-      else document.documentElement.classList.remove("dark")
-    </script>
   </head>
   <body>
     <slot />
@@ -42,6 +36,10 @@ const { title } = Astro.props
     scroll-behavior: smooth;
   }
 
+  section[id] {
+    scroll-margin-top: 10vh;
+  }
+
   .bg-pattern {
     background-size: 150px 150px;
     background-image: url(/pattern.png);
@@ -54,5 +52,31 @@ const { title } = Astro.props
       transparent
     );
     mask-image: linear-gradient(to bottom, transparent, 10%, white, 90%, transparent);
+  }
+
+  .mask-hidden {
+    mask-image: linear-gradient(black 65%, transparent);
+  }
+
+  .custombar {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(82, 82, 82) rgb(0, 0, 0, 0.9);
+  }
+
+  .custombar::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .custombar::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+
+  .custombar::-webkit-scrollbar-thumb {
+    background-color: rgb(82, 82, 82);
+  }
+
+  .hidden-bar::-webkit-scrollbar {
+    scrollbar-width: none;
+    display: none;
   }
 </style>

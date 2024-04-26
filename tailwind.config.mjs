@@ -4,6 +4,9 @@ export default {
     darkMode: "class",
     theme: {
         extend: {
+            fontFamily: {
+                poppins: ["Poppins", "sains-serif"],
+            },
             borderWidth: {
                 min: "1px",
             },
@@ -12,9 +15,6 @@ export default {
                     "linear-gradient(rgb(161, 161, 170) 1px, transparent 1px), linear-gradient(to right, rgb(161, 161, 170) 1px, rgb(255, 255, 255) 1px);",
                 "patron-design-dark":
                     "linear-gradient(rgb(39, 39, 42) 1px, transparent 1px), linear-gradient(to right, rgb(39, 39, 42) 1px, rgb(0, 0, 0) 1px);",
-            },
-            fontFamily: {
-                poppins: ["Poppins", "sains-serif"],
             },
         },
     },

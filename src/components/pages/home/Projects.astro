@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets"
+
+import brainboximg from "../../../assets/projects/bbfe.png"
+import nextimg from "../../../assets/skills/frontend/next.svg"
+import reactimg from "../../../assets/skills/frontend/react.svg"
+import tailwindimg from "../../../assets/skills/frontend/styles/tailwind.svg"
+import typescriptimg from "../../../assets/skills/langs/typescript.svg"
+---
+
+<article aria-label="Projects section" class="mb-8 h-min w-full px-4 text-white">
+  <header class="mb-8 text-center">
+    <h2 class="font-poppins text-3xl sm:text-4xl">Projects I worked</h2>
+  </header>
+  <section class="mx-auto grid h-full w-full grid-rows-1 gap-4 sm:w-3/4 sm:grid-cols-2">
+    <article class="group h-full w-full bg-black [&_*]:transition-all">
+      <header class="mb-2">
+        <h2 class="font-poppins text-lg lg:text-3xl lg:group-hover:translate-x-1/3">
+          Brainbox for everyone
+        </h2>
+      </header>
+      <section class="rounded-md border-min border-neutral-800">
+        <a
+          href="https://brainbox-fe.vercel.app"
+          target="_blank"
+          referrerpolicy="no-referrer"
+        >
+          <Image
+            width={700}
+            height={500}
+            src={brainboximg}
+            alt="Brainbox"
+            title="Brainbox reference"
+            class="mask-hidden mb-4 h-[200px] w-full rounded-t-md sm:h-[300px]"
+          />
+        </a>
+        <figure class="px-4 pb-4">
+          <strong class="font-poppins text-lg"> Technologies used </strong>
+          <li class="flex gap-4 pt-1">
+            <Image
+              width={75}
+              height={75}
+              src={typescriptimg}
+              alt="typescript"
+              class="size-8"
+            />
+            <Image
+              width={75}
+              height={75}
+              src={nextimg}
+              alt="Next"
+              class="size-8 rounded-full bg-white"
+            />
+            <Image width={75} height={75} src={reactimg} alt="React" class="size-8" />
+            <Image
+              width={75}
+              height={75}
+              src={tailwindimg}
+              alt="Tailwind"
+              class="size-8"
+            />
+          </li>
+        </figure>
+        <details>
+          <summary
+            class="w-full py-2 text-center transition-all lg:hover:bg-white lg:hover:text-black"
+          >
+            More..
+          </summary>
+          <article class="px-4 pb-4 pt-2">
+            <strong class="font-poppins text-lg">Job</strong>
+            <p class="text-sm text-gray-300">
+              Participate in the implementation of the visual section using the
+              aforementioned technologies, developing useful uses for SSR and consumption
+              of LLM's services, helping in the development of the UI/UX for the platform.
+            </p>
+          </article>
+        </details>
+      </section>
+    </article>
+  </section>
+</article>
