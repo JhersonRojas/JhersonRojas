@@ -1,27 +1,5 @@
 ---
 import { Image } from "astro:assets"
-
-import angularimg from "../../../assets/skills/frontend/angular.svg"
-import astroimg from "../../../assets/skills/frontend/astro.svg"
-import ionicimg from "../../../assets/skills/frontend/ionic.svg"
-import nextimg from "../../../assets/skills/frontend/next.svg"
-import reactimg from "../../../assets/skills/frontend/react.svg"
-
-import dotnetimg from "../../../assets/skills/backend/dotnet.svg"
-import nginximg from "../../../assets/skills/backend/nginx.svg"
-import nodeimg from "../../../assets/skills/backend/node.svg"
-
-import bootstrapimg from "../../../assets/skills/frontend/styles/bootstrap.svg"
-import cssimg from "../../../assets/skills/frontend/styles/css.svg"
-import sassimg from "../../../assets/skills/frontend/styles/sass.svg"
-import tailwindimg from "../../../assets/skills/frontend/styles/tailwind.svg"
-
-import mariaimg from "../../../assets/skills/backend/database/mariadb.svg"
-import mongoimg from "../../../assets/skills/backend/database/mongo.svg"
-import mysqlimg from "../../../assets/skills/backend/database/mysql.svg"
-import postgresimg from "../../../assets/skills/backend/database/postgres.svg"
-import prismaimg from "../../../assets/skills/backend/orm/prisma.svg"
-import sequelizeimg from "../../../assets/skills/backend/orm/sequelize.svg"
 ---
 
 <article
@@ -34,42 +12,82 @@ import sequelizeimg from "../../../assets/skills/backend/orm/sequelize.svg"
   <section
     class="mx-auto grid w-full grid-rows-1 gap-x-4 gap-y-6 sm:w-3/4 sm:grid-cols-2"
   >
+    <article class="col-span-full h-full w-full">
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Principal languajes</h3>
+      <figure class="flex gap-4 rounded-md border-min border-opaque p-6 *:transition-all">
+        <Image
+          alt="Javascript"
+          width={50}
+          height={50}
+          src="/assets/langs/javascript.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Typescript"
+          width={50}
+          height={50}
+          src="/assets/langs/typescript.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Python"
+          width={50}
+          height={50}
+          src="/assets/langs/python.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Csharp"
+          width={50}
+          height={50}
+          src="/assets/langs/csharp.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Bash"
+          width={50}
+          height={50}
+          src="/assets/langs/bash.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
     <article class="h-full w-full">
       <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Frontend</h3>
-      <figure class="border-opaque flex gap-4 rounded-md border-min p-6 *:transition-all">
+      <figure class="flex gap-4 rounded-md border-min border-opaque p-6 *:transition-all">
         <Image
           alt="React"
           width={50}
           height={50}
-          src={reactimg}
+          src="/assets/frontend/react.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Nextjs"
           width={50}
           height={50}
-          src={nextimg}
+          src="/assets/frontend/next.svg"
           class="size-12 rounded-full bg-white lg:hover:scale-110"
         />
         <Image
           alt="Astro"
           width={50}
           height={50}
-          src={astroimg}
+          src="/assets/frontend/astro.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Ionic"
           width={50}
           height={50}
-          src={ionicimg}
+          src="/assets/frontend/ionic.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Angular"
           width={50}
           height={50}
-          src={angularimg}
+          src="/assets/frontend/angular.svg"
           class="size-12 lg:hover:scale-110"
         />
       </figure>
@@ -77,60 +95,60 @@ import sequelizeimg from "../../../assets/skills/backend/orm/sequelize.svg"
     <article class="h-full w-full">
       <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Backend</h3>
       <figure
-        class="border-opaque flex justify-end gap-4 rounded-md border-min p-6 *:transition-all"
+        class="flex justify-end gap-4 rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Nginx"
           width={50}
           height={50}
-          src={nginximg}
+          src="/assets/backend/nginx.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt=".Net"
           width={50}
           height={50}
-          src={dotnetimg}
+          src="/assets/backend/dotnet.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Node.js"
           width={50}
           height={50}
-          src={nodeimg}
+          src="/assets/backend/node.svg"
           class="size-12 lg:hover:scale-110"
         />
       </figure>
     </article>
     <article class="h-full w-full">
       <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Styles</h3>
-      <figure class="border-opaque flex gap-4 rounded-md border-min p-6 *:transition-all">
+      <figure class="flex gap-4 rounded-md border-min border-opaque p-6 *:transition-all">
         <Image
           alt="Css"
           width={50}
           height={50}
-          src={cssimg}
+          src="/assets/frontend/styles/css.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Sass"
           width={50}
           height={50}
-          src={sassimg}
+          src="/assets/frontend/styles/sass.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Tailwind"
           width={50}
           height={50}
-          src={tailwindimg}
+          src="/assets/frontend/styles/tailwind.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Bootstrap"
           width={50}
           height={50}
-          src={bootstrapimg}
+          src="/assets/frontend/styles/bootstrap.svg"
           class="size-12 lg:hover:scale-110"
         />
       </figure>
@@ -138,48 +156,83 @@ import sequelizeimg from "../../../assets/skills/backend/orm/sequelize.svg"
     <article class="h-full w-full">
       <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Database and ORM's</h3>
       <figure
-        class="border-opaque flex justify-end gap-4 rounded-md border-min p-6 *:transition-all"
+        class="flex justify-end gap-4 rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Mariadb"
           width={50}
           height={50}
-          src={mariaimg}
+          src="/assets/backend/database/mariadb.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Mysql"
           width={50}
           height={50}
-          src={mysqlimg}
+          src="/assets/backend/database/mysql.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Mongo db"
           width={50}
           height={50}
-          src={mongoimg}
+          src="/assets/backend/database/mongo.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="PostgreSql"
           width={50}
           height={50}
-          src={postgresimg}
+          src="/assets/backend/database/postgres.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Prisma ORM"
           width={50}
           height={50}
-          src={prismaimg}
+          src="/assets/backend/orm/prisma.svg"
           class="size-12 lg:hover:scale-110"
         />
         <Image
           alt="Sequelize ORM"
           width={50}
           height={50}
-          src={sequelizeimg}
+          src="/assets/backend/orm/sequelize.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+      </figure>
+    </article>
+    <article class="col-span-full h-full w-full">
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Other skills</h3>
+      <figure
+        class="flex justify-end gap-4 rounded-md border-min border-opaque p-6 *:transition-all"
+      >
+        <Image
+          alt="Docker"
+          width={50}
+          height={50}
+          src="/assets/others/docker.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Git"
+          width={50}
+          height={50}
+          src="/assets/others/git.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Json Web Token"
+          width={50}
+          height={50}
+          src="/assets/others/jwt.svg"
+          class="size-12 lg:hover:scale-110"
+        />
+        <Image
+          alt="Linux"
+          width={50}
+          height={50}
+          src="/assets/others/linux.svg"
           class="size-12 lg:hover:scale-110"
         />
       </figure>

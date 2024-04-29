@@ -2,10 +2,6 @@
 import { Image } from "astro:assets"
 
 import brainboximg from "../../../assets/projects/bbfe.png"
-import nextimg from "../../../assets/skills/frontend/next.svg"
-import reactimg from "../../../assets/skills/frontend/react.svg"
-import tailwindimg from "../../../assets/skills/frontend/styles/tailwind.svg"
-import typescriptimg from "../../../assets/skills/langs/typescript.svg"
 ---
 
 <article
@@ -20,7 +16,7 @@ import typescriptimg from "../../../assets/skills/langs/typescript.svg"
       <header class="mb-2">
         <h2 class="font-poppins text-lg lg:text-3xl">Brainbox for everyone</h2>
       </header>
-      <section class="border-opaque rounded-md border-min">
+      <section class="rounded-md border-min border-opaque">
         <a
           href="https://brainbox-fe.vercel.app"
           target="_blank"
@@ -41,22 +37,28 @@ import typescriptimg from "../../../assets/skills/langs/typescript.svg"
             <Image
               width={75}
               height={75}
-              src={typescriptimg}
+              src="/assets/langs/typescript.svg"
               alt="typescript"
               class="size-8"
             />
             <Image
               width={75}
               height={75}
-              src={nextimg}
+              src="/assets/frontend/next.svg"
               alt="Next"
               class="size-8 rounded-full bg-white"
             />
-            <Image width={75} height={75} src={reactimg} alt="React" class="size-8" />
             <Image
               width={75}
               height={75}
-              src={tailwindimg}
+              src="/assets/frontend/react.svg"
+              alt="React"
+              class="size-8"
+            />
+            <Image
+              width={75}
+              height={75}
+              src="/assets/frontend/tailwind.svg"
               alt="Tailwind"
               class="size-8"
             />
