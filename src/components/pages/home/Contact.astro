@@ -1,0 +1,83 @@
+---
+import {
+  IconGithub,
+  IconGitlab,
+  IconLikendin,
+  IconMail,
+  IconMap,
+  IconUser,
+} from "../../others/Icons"
+---
+
+<article
+  aria-label="Contact section"
+  class="relative mb-8 h-min min-h-[600px] w-full px-4 text-white sm:grid sm:px-0"
+>
+  <section class="m-auto h-min w-full sm:w-3/4">
+    <header class="mb-4">
+      <h2 class="font-poppins text-2xl sm:text-4xl">Contact with Me</h2>
+    </header>
+    <article class="grid gap-4 sm:grid-cols-3 sm:grid-rows-1">
+      <section class="rounded-md border-min border-opaque p-6 text-center">
+        <header class="font-poppins text-xl">Email</header>
+        <figure class="flex items-center justify-center py-8">
+          <IconMail className="size-16 text-white" />
+        </figure>
+        <a
+          href="mailto:jhersonrojas.dev@gmail.com"
+          referrerpolicy="no-referrer"
+          class="w-fit rounded-md px-4 py-2 transition-all lg:hover:bg-opaque"
+        >
+          jhersonrojas.dev@gmail.com
+        </a>
+      </section>
+      <section class="rounded-md border-min border-opaque p-6 text-center">
+        <header class="font-poppins text-xl">Location</header>
+        <figure class="flex items-center justify-center py-8">
+          <IconMap className="size-16 text-white" />
+        </figure>
+        <article>Colombia - Huila</article>
+      </section>
+      <section class="rounded-md border-min border-opaque p-6 text-center">
+        <header class="font-poppins text-xl">Another Accounts</header>
+        <figure class="flex items-center justify-center py-8">
+          <IconUser className="size-16 text-white" />
+        </figure>
+        <span class="w-fit rounded-md px-4 py-2 transition-all lg:hover:bg-opaque">
+          Check my CV
+        </span>
+      </section>
+    </article>
+    <ul
+      class="mx-auto mt-4 w-full justify-between gap-4 rounded-md border-min border-opaque p-4 *:rounded-md sm:flex sm:w-min"
+    >
+      <a
+        href="https://github.com/jhersonrojas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex min-w-fit gap-2 p-2 transition-all lg:hover:bg-opaque"
+      >
+        <IconGithub className="size-6" />
+        /jhersonrojas
+      </a>
+      <a
+        href="https://www.linkedin.com/in/jhersonrojas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex min-w-fit gap-2 p-2 transition-all lg:hover:bg-opaque"
+      >
+        <IconLikendin className="size-6" />
+        /in/jhersonrojas
+      </a>
+      <a
+        href="https://gitlab.com/jhersonrojas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex min-w-fit gap-2 p-2 transition-all lg:hover:bg-opaque"
+      >
+        <IconGitlab className="size-6" />
+        /jhersonrojas
+      </a>
+    </ul>
+  </section>
+</article>

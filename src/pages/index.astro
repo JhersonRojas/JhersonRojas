@@ -1,5 +1,6 @@
 ---
 import { IconGithub } from "../components/others/Icons"
+import Contact from "../components/pages/home/Contact.astro"
 import Footer from "../components/pages/home/Footer.astro"
 import Projects from "../components/pages/home/Projects.astro"
 import Skills from "../components/pages/home/Skills.astro"
@@ -41,6 +42,8 @@ import Layout from "../layouts/Layout.astro"
         </menu>
         <a
           href="https://github.com/JhersonRojas"
+          target="_blank"
+          referrerpolicy="no-referrer"
           class="flex items-center justify-center rounded-md p-3 transition-all lg:hover:bg-white lg:hover:text-black"
         >
           <IconGithub name="Icon for github" className="size-6" />
@@ -62,7 +65,7 @@ import Layout from "../layouts/Layout.astro"
         <div class="mx-auto flex h-min items-center gap-4 [&_*]:transition-all">
           <a
             href="#contact"
-            class="border-opaque rounded-md border-min bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
+            class="rounded-md border-min border-opaque bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
           >
             Contact me
           </a>
@@ -79,6 +82,8 @@ import Layout from "../layouts/Layout.astro"
     <Projects />
     <section id="skills"></section>
     <Skills />
+    <section id="contact"></section>
+    <Contact />
     <Footer />
   </main>
 </Layout>
