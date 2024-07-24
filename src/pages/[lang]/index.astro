@@ -1,0 +1,48 @@
+---
+export function getStaticPaths() {
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }]
+}
+
+const { lang } = Astro.params
+
+import Navigation from "../../components/global/Navigation.astro"
+import Contact from "../../components/pages/home/Contact.astro"
+import Footer from "../../components/pages/home/Footer.astro"
+import Hero from "../../components/pages/home/Hero.astro"
+import Projects from "../../components/pages/home/Projects.astro"
+import Skills from "../../components/pages/home/Skills.astro"
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout title="Jherson Rojas dev">
+  <main
+    aria-label="Main container for the portfolio"
+    class="custombar relative h-screen overflow-x-hidden bg-black"
+  >
+    <Navigation lang={lang} />
+    <section id="welcome"></section>
+    <Hero lang={lang} />
+    <section id="projects"></section>
+    <Projects lang={lang} />
+    <section id="skills"></section>
+    <Skills lang={lang} />
+    <section id="about"></section>
+    <article class="hidden">
+      <p>
+        Ingeniero de Sistemas con excelentes habilidades para la solución de problemas,
+        muy buen sentido de responsabilidad, dispuesto al aprendizaje continuo, ofreciendo
+        lo mejor de mí cada día tanto en el aspecto laboral como el personal. Asumo con
+        agrado los retos y metas propuestas junto con un buen manejo de relaciones
+        interpersonales, facilidad para trabajar en equipo y bajo presión.
+      </p>
+      <p>
+        Gracias a los conocimientos adquiridos en el campo laboral me desempeño en el área
+        de desarrollo de software en sus fases de diseño, desarrollo, implementación y
+        pruebas, utilizando diferentes herramientas tecnológicas.
+      </p>
+    </article>
+    <section id="contact"></section>
+    <Contact lang={lang} />
+    <Footer lang={lang} />
+  </main>
+</Layout>

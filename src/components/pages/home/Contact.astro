@@ -1,4 +1,13 @@
 ---
+import { getDictionary } from "../../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
+
 import {
   IconGithub,
   IconGitlab,
@@ -15,11 +24,11 @@ import {
 >
   <section class="m-auto h-min w-full sm:w-3/4">
     <header class="mb-4">
-      <h2 class="font-poppins text-2xl sm:text-4xl">Contact with Me</h2>
+      <h2 class="font-poppins text-2xl sm:text-4xl">{dic.contact.title}</h2>
     </header>
     <article class="grid gap-4 sm:grid-cols-3 sm:grid-rows-1">
       <section class="rounded-md border-min border-opaque p-6 text-center">
-        <header class="font-poppins text-xl">Email</header>
+        <header class="font-poppins text-xl">{dic.contact.sections.email.title}</header>
         <figure class="flex items-center justify-center py-8">
           <IconMail className="size-16 text-white" />
         </figure>
@@ -32,19 +41,21 @@ import {
         </a>
       </section>
       <section class="rounded-md border-min border-opaque p-6 text-center">
-        <header class="font-poppins text-xl">Location</header>
+        <header class="font-poppins text-xl">
+          {dic.contact.sections.location.title}
+        </header>
         <figure class="flex items-center justify-center py-8">
           <IconMap className="size-16 text-white" />
         </figure>
         <article>Colombia - Huila</article>
       </section>
       <section class="rounded-md border-min border-opaque p-6 text-center">
-        <header class="font-poppins text-xl">Another Accounts</header>
+        <header class="font-poppins text-xl">{dic.contact.sections.others.title}</header>
         <figure class="flex items-center justify-center py-8">
           <IconUser className="size-16 text-white" />
         </figure>
         <span class="w-fit rounded-md px-4 py-2 transition-all lg:hover:bg-opaque">
-          Check my CV
+          {dic.contact.sections.others.content}
         </span>
       </section>
     </article>

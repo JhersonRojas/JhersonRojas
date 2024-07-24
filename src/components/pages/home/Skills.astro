@@ -1,5 +1,14 @@
 ---
 import { Image } from "astro:assets"
+
+import { getDictionary } from "../../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
 ---
 
 <article
@@ -7,18 +16,19 @@ import { Image } from "astro:assets"
   class="relative mb-8 h-min w-full px-4 text-white sm:px-0"
 >
   <header class="mb-8 text-center">
-    <h2 class="font-poppins text-2xl sm:text-3xl">Skills and Knolowedges</h2>
+    <h2 class="font-poppins text-2xl sm:text-3xl">{dic.skills.title}</h2>
   </header>
   <section
     class="mx-auto grid w-full grid-rows-1 gap-x-4 gap-y-6 sm:w-3/4 sm:grid-cols-2"
   >
     <article class="col-span-full h-full w-full">
-      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Principal languajes</h3>
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">{dic.skills.languajes.title}</h3>
       <figure
         class="flex gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Javascript"
+          title="Javascript"
           width={50}
           height={50}
           src="/assets/langs/javascript.svg"
@@ -26,6 +36,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Typescript"
+          title="Typescript"
           width={50}
           height={50}
           src="/assets/langs/typescript.svg"
@@ -33,6 +44,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Python"
+          title="Python"
           width={50}
           height={50}
           src="/assets/langs/python.svg"
@@ -40,6 +52,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Csharp"
+          title="Csharp"
           width={50}
           height={50}
           src="/assets/langs/csharp.svg"
@@ -47,6 +60,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Bash"
+          title="Bash"
           width={50}
           height={50}
           src="/assets/langs/bash.svg"
@@ -55,12 +69,13 @@ import { Image } from "astro:assets"
       </figure>
     </article>
     <article class="h-full w-full">
-      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Frontend</h3>
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">{dic.skills.frontend.title}</h3>
       <figure
         class="flex gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="React"
+          title="React"
           width={50}
           height={50}
           src="/assets/frontend/react.svg"
@@ -68,6 +83,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Nextjs"
+          title="Nextjs"
           width={50}
           height={50}
           src="/assets/frontend/next.svg"
@@ -75,6 +91,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Astro"
+          title="Astro"
           width={50}
           height={50}
           src="/assets/frontend/astro.svg"
@@ -82,6 +99,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Ionic"
+          title="Ionic"
           width={50}
           height={50}
           src="/assets/frontend/ionic.svg"
@@ -89,6 +107,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Angular"
+          title="Angular"
           width={50}
           height={50}
           src="/assets/frontend/angular.svg"
@@ -97,12 +116,15 @@ import { Image } from "astro:assets"
       </figure>
     </article>
     <article class="h-full w-full">
-      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Backend</h3>
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">
+        {dic.skills.backend.title}
+      </h3>
       <figure
         class="flex justify-end gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Nginx"
+          title="Nginx"
           width={50}
           height={50}
           src="/assets/backend/nginx.svg"
@@ -110,6 +132,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt=".Net"
+          title=".Net"
           width={50}
           height={50}
           src="/assets/backend/dotnet.svg"
@@ -117,6 +140,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Node.js"
+          title="Node.js"
           width={50}
           height={50}
           src="/assets/backend/node.svg"
@@ -125,12 +149,13 @@ import { Image } from "astro:assets"
       </figure>
     </article>
     <article class="h-full w-full">
-      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">Styles</h3>
+      <h3 class="mb-2 font-poppins text-xl sm:text-2xl">{dic.skills.styles.title}</h3>
       <figure
         class="flex gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Css"
+          title="Css"
           width={50}
           height={50}
           src="/assets/frontend/styles/css.svg"
@@ -138,6 +163,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Sass"
+          title="Sass"
           width={50}
           height={50}
           src="/assets/frontend/styles/sass.svg"
@@ -145,6 +171,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Tailwind"
+          title="Tailwind"
           width={50}
           height={50}
           src="/assets/frontend/styles/tailwind.svg"
@@ -152,6 +179,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Bootstrap"
+          title="Bootstrap"
           width={50}
           height={50}
           src="/assets/frontend/styles/bootstrap.svg"
@@ -160,12 +188,15 @@ import { Image } from "astro:assets"
       </figure>
     </article>
     <article class="h-full w-full">
-      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Database and ORM's</h3>
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">
+        {dic.skills.databases.title}
+      </h3>
       <figure
         class="flex justify-end gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Mariadb"
+          title="Mariadb"
           width={50}
           height={50}
           src="/assets/backend/database/mariadb.svg"
@@ -173,6 +204,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Mysql"
+          title="Mysql"
           width={50}
           height={50}
           src="/assets/backend/database/mysql.svg"
@@ -180,6 +212,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Mongo db"
+          title="Mongo db"
           width={50}
           height={50}
           src="/assets/backend/database/mongo.svg"
@@ -187,6 +220,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="PostgreSql"
+          title="PostgreSql"
           width={50}
           height={50}
           src="/assets/backend/database/postgres.svg"
@@ -194,6 +228,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Prisma ORM"
+          title="Prisma ORM"
           width={50}
           height={50}
           src="/assets/backend/orm/prisma.svg"
@@ -201,6 +236,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Sequelize ORM"
+          title="Sequelize ORM"
           width={50}
           height={50}
           src="/assets/backend/orm/sequelize.svg"
@@ -209,12 +245,15 @@ import { Image } from "astro:assets"
       </figure>
     </article>
     <article class="col-span-full h-full w-full">
-      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">Other skills</h3>
+      <h3 class="mb-2 text-end font-poppins text-xl sm:text-2xl">
+        {dic.skills.others.title}
+      </h3>
       <figure
         class="flex justify-end gap-4 overflow-x-auto rounded-md border-min border-opaque p-6 *:transition-all"
       >
         <Image
           alt="Docker"
+          title="Docker"
           width={50}
           height={50}
           src="/assets/others/docker.svg"
@@ -222,6 +261,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Git"
+          title="Git"
           width={50}
           height={50}
           src="/assets/others/git.svg"
@@ -229,6 +269,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Json Web Token"
+          title="Json Web Token"
           width={50}
           height={50}
           src="/assets/others/jwt.svg"
@@ -236,6 +277,7 @@ import { Image } from "astro:assets"
         />
         <Image
           alt="Linux"
+          title="Linux"
           width={50}
           height={50}
           src="/assets/others/linux.svg"

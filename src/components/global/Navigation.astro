@@ -1,28 +1,46 @@
 ---
-import { IconLogo } from "../others/Icons"
+import { getDictionary } from "../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
+
+import { IconGithub, IconGlobe } from "../others/Icons"
 ---
 
-<nav class="flex h-20 w-full items-center justify-between 2xl:h-24">
-  <a href="/" class="mx-auto flex items-end transition-all hover:opacity-80 lg:mx-0">
-    <p class="flex items-center">
-      <b class="text-4xl font-extrabold">ROJ</b>
-      <IconLogo className="h-8 w-8 fill-white" />
-      <b class="text-4xl font-extrabold">S</b>
-    </p>
-    <small class="text-xl">.dev</small>
-  </a>
-  <ul class="hidden w-1/2 justify-between font-semibold lg:flex">
-    <li class="transition-all hover:opacity-80">
-      <a href="/" title="Inicio del portafolio">Inicio</a>
-    </li>
-    <li class="transition-all hover:opacity-80">
-      <a href="#jobs" title="Experiencias y trabajos realizados"> Proyectos </a>
-    </li>
-    <li class="transition-all hover:opacity-80">
-      <a href="#skills" title="Conocimientos y tecnologias"> Habilidades </a>
-    </li>
-    <li class="transition-all hover:opacity-80">
-      <a href="#contact" title="Donde encontrarme y contacto"> Contacto </a>
-    </li>
-  </ul>
-</nav>
+<header
+  class="sticky top-0 z-50 flex h-min items-center justify-end bg-black/80 px-6 py-4"
+>
+  <nav class="flex items-center gap-6 text-white">
+    <menu class="hidden gap-6 *:transition-all sm:flex">
+      {
+        dic.navigation.content.map((item: { name: string; ref: string }) => (
+          <a
+            href={`#${item.ref.toLowerCase()}`}
+            class="rounded-md px-5 py-3 lg:hover:bg-white lg:hover:text-black"
+          >
+            {item.name}
+          </a>
+        ))
+      }
+    </menu>
+    <a
+      target="_blank"
+      referrerpolicy="no-referrer"
+      href="https://github.com/JhersonRojas"
+      class="flex items-center justify-center rounded-md p-3 transition-all lg:hover:bg-white lg:hover:text-black"
+    >
+      <IconGithub name="Icon for github" className="size-6" />
+    </a>
+    <a
+      href={lang === "en" ? "/es" : "/en"}
+      class="flex items-center justify-center gap-2 rounded-md p-3 font-poppins transition-all lg:hover:bg-white lg:hover:text-black"
+    >
+      <IconGlobe name="Icon for github" className="size-6" />
+      {lang === "en" ? "ES" : "EN"}
+    </a>
+  </nav>
+</header>

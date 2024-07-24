@@ -1,0 +1,102 @@
+{
+  "navigation": {
+    "content": [
+      { "name": "Inicio", "ref": "welcome" },
+      { "name": "Projectos", "ref": "projects" },
+      { "name": "Habilidades", "ref": "skills" },
+      { "name": "Contacto", "ref": "contact" }
+    ]
+  },
+  "hero": {
+    "title": "Hola!, Soy Jherson Rojas",
+    "description": "Un desarrollador Full-Stack, siempre creando soluciones creativas y eficientes.",
+    "actions": {
+      "first": "Contáctame...",
+      "second": "Más..."
+    }
+  },
+  "projects": {
+    "title": "Proyectos en los que he trabajado",
+    "expand": {
+      "title": "Tecnologías utilizadas",
+      "action": "Más...",
+      "job": "Que hice?"
+    },
+    "samples": [
+      {
+        "name": "Brainbox for everyone",
+        "link": "https://app.brainbox.com.co",
+        "img": "/projects/bbfe.png",
+        "technologies": [
+          "/assets/langs/typescript.svg",
+          "/assets/frontend/next.svg",
+          "/assets/frontend/react.svg",
+          "/assets/frontend/styles/tailwind.svg"
+        ],
+        "description": "Participé en la implementación de la sección visual utilizando las tecnologías mencionadas, desarrollando usos útiles para SSR y consumo de servicios de LLM, ayudando en el desarrollo de la UI/UX para la plataforma."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades y Conocimientos",
+    "languajes": {
+      "title": "Lenguajes principales"
+    },
+    "frontend": {
+      "title": "Frontend"
+    },
+    "styles": {
+      "title": "Estilos"
+    },
+    "backend": {
+      "title": "Backend"
+    },
+    "databases": {
+      "title": "Bases de Datos y ORM's"
+    },
+    "others": {
+      "title": "Otras habilidades"
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "sections": {
+      "email": {
+        "title": "Correo electrónico",
+        "content": "jhersonrojas.dev@gmail.com"
+      },
+      "location": {
+        "title": "Ubicación",
+        "content": "Colombia - Huila"
+      },
+      "others": {
+        "title": "Otras cuentas",
+        "content": "Consulta mi CV"
+      }
+    },
+    "social": {
+      "github": {
+        "ref": "/jhersonrojas",
+        "link": "https://github.com/jhersonrojas"
+      },
+      "linkedin": {
+        "ref": "/in/jhersonrojas",
+        "link": "https://www.linkedin.com/in/jhersonrojas"
+      },
+      "gitlab": {
+        "ref": "/jhersonrojas",
+        "link": "https://gitlab.com/jhersonrojas"
+      }
+    }
+  },
+  "footer": {
+    "reference": {
+      "title": "Jherson Rojas Dev",
+      "addr": "Creando código con Cuidado, Paciencia y Felicidad",
+      "copy": "© 2024 Jherson Rojas, Desarrollador."
+    },
+    "sections": {
+      "title": "Secciones"
+    }
+  }
+}

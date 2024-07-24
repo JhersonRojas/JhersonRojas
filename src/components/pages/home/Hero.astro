@@ -1,0 +1,39 @@
+---
+import { getDictionary } from "../../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
+---
+
+<article
+  aria-label="Welcome section"
+  class="relative mb-12 h-[90vh] min-h-[600px] w-full text-white"
+>
+  <div class="bg-pattern absolute top-0 h-full w-full"></div>
+  <section class="absolute left-0 top-1/3 z-10 grid w-full min-w-fit px-6 sm:px-0">
+    <h1 class="mx-auto mb-4 font-poppins text-5xl tracking-tighter">
+      {dic.hero.title}
+    </h1>
+    <p class="mx-auto mb-4 text-gray-300">
+      {dic.hero.description}
+    </p>
+    <div class="mx-auto flex h-min items-center gap-4 [&_*]:transition-all">
+      <a
+        href="#contact"
+        class="rounded-md border-min border-opaque bg-black px-6 py-2 text-white lg:hover:bg-white lg:hover:text-black"
+      >
+        {dic.hero.actions.first}
+      </a>
+      <a
+        href="#projects"
+        class="rounded-md bg-white px-6 py-2 text-black lg:hover:bg-black lg:hover:text-white"
+      >
+        {dic.hero.actions.second}
+      </a>
+    </div>
+  </section>
+</article>

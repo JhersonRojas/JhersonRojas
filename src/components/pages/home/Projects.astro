@@ -1,7 +1,14 @@
 ---
 import { Image } from "astro:assets"
 
-import brainboximg from "../../../assets/projects/bbfe.png"
+import { getDictionary } from "../../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
 ---
 
 <article
@@ -9,77 +16,64 @@ import brainboximg from "../../../assets/projects/bbfe.png"
   class="relative mb-12 h-min w-full px-4 text-white sm:px-0"
 >
   <header class="mb-8 text-center">
-    <h2 class="font-poppins text-3xl sm:text-4xl">Projects I Worked</h2>
+    <h2 class="font-poppins text-3xl sm:text-4xl">{dic.projects.title}</h2>
   </header>
   <section class="mx-auto grid h-full w-full grid-rows-1 gap-4 sm:w-3/4 sm:grid-cols-2">
-    <article class="h-full w-full bg-black">
-      <header class="mb-2">
-        <h2 class="font-poppins text-lg lg:text-3xl">Brainbox for everyone</h2>
-      </header>
-      <section class="rounded-md border-min border-opaque">
-        <a
-          href="https://brainbox-fe.vercel.app"
-          target="_blank"
-          referrerpolicy="no-referrer"
-        >
-          <Image
-            width={700}
-            height={500}
-            src={brainboximg}
-            alt="Brainbox"
-            title="Brainbox reference"
-            class="mask-hidden mb-4 h-[200px] w-full rounded-t-md sm:h-[300px]"
-          />
-        </a>
-        <figure class="px-4 pb-4">
-          <strong class="font-poppins text-lg"> Technologies used </strong>
-          <li class="flex gap-4 pt-1">
-            <Image
-              width={75}
-              height={75}
-              src="/assets/langs/typescript.svg"
-              alt="typescript"
-              class="size-8"
-            />
-            <Image
-              width={75}
-              height={75}
-              src="/assets/frontend/next.svg"
-              alt="Next"
-              class="size-8 rounded-full bg-white"
-            />
-            <Image
-              width={75}
-              height={75}
-              src="/assets/frontend/react.svg"
-              alt="React"
-              class="size-8"
-            />
-            <Image
-              width={75}
-              height={75}
-              src="/assets/frontend/styles/tailwind.svg"
-              alt="Tailwind"
-              class="size-8"
-            />
-          </li>
-        </figure>
-        <details>
-          <summary
-            class="w-full py-2 text-center transition-all lg:hover:bg-white lg:hover:text-black"
-          >
-            More...
-          </summary>
-          <article class="px-4 pb-4 pt-2">
-            <strong class="font-poppins text-lg">Job</strong>
-            <p class="w-[95%] text-pretty text-sm text-gray-300">
-              Participate in the implementation of the visual section using the
-              aforementioned technologies, developing useful uses for SSR and consumption
-              of LLM's services, helping in the development of the UI/UX for the platform.
-            </p>
+    {
+      dic.projects.samples.map(
+        (sample: {
+          name: string
+          img: string
+          link: string
+          technologies: string[]
+          description: string
+        }) => (
+          <article class="h-full w-full bg-black">
+            <header class="mb-2">
+              <h2 class="font-poppins text-lg lg:text-3xl">{sample.name}</h2>
+            </header>
+            <section class="rounded-md border-min border-opaque">
+              <a href={sample.link} target="_blank" referrerpolicy="no-referrer">
+                <Image
+                  width={700}
+                  height={500}
+                  src={sample.img}
+                  alt={sample.name}
+                  class="mask-hidden mb-4 h-[200px] w-full rounded-t-md sm:h-[300px]"
+                />
+              </a>
+              <figure class="px-4 pb-4">
+                <strong class="font-poppins text-lg">{dic.projects.expand.title}</strong>
+                <li class="flex gap-4 pt-1">
+                  {sample.technologies.map((tech) => (
+                    <Image
+                      width={75}
+                      height={75}
+                      src={tech}
+                      alt={tech}
+                      class:list={[
+                        "size-8",
+                        tech.includes("next") && "rounded-full bg-white",
+                      ]}
+                    />
+                  ))}
+                </li>
+              </figure>
+              <details>
+                <summary class="w-full py-2 text-center transition-all lg:hover:bg-white lg:hover:text-black">
+                  {dic.projects.expand.action}
+                </summary>
+                <article class="px-4 pb-4 pt-2">
+                  <strong class="font-poppins text-sm">{dic.projects.expand.job}</strong>
+                  <p class="w-[95%] text-pretty text-sm text-gray-300">
+                    {sample.description}
+                  </p>
+                </article>
+              </details>
+            </section>
           </article>
-        </details>
-      </section>
-    </article>
+        )
+      )
+    }
   </section>
 </article>

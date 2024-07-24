@@ -1,3 +1,14 @@
+---
+import { getDictionary } from "../../../utils/tools"
+
+interface Props {
+  lang: string
+}
+
+const { lang } = Astro.props
+const dic = await getDictionary(lang)
+---
+
 <hr class="w-full border-opaque" />
 <footer
   aria-label="Footer for extra info"
@@ -5,24 +16,32 @@
 >
   <section class="grid h-min w-full flex-1 gap-4 lg:grid-cols-2">
     <article class="flex h-full flex-col justify-between gap-2 pt-8">
-      <p class="min-w-fit font-poppins text-2xl">Jherson Rojas Dev</p>
+      <p class="min-w-fit font-poppins text-2xl">{dic.footer.reference.title}</p>
       <address class="font-poppins text-xs">
-        - "Creating code with Care, Patience and Happiness"
+        - "{dic.footer.reference.addr}"
       </address>
     </article>
     <article class="flex pt-8 sm:justify-end">
       <li>
-        <header class="mb-4 px-4 font-poppins text-xl">Sections</header>
+        <header class="mb-4 px-4 font-poppins text-xl">
+          {dic.footer.sections.title}
+        </header>
         <menu class="text-sm *:transition-all">
-          <li class="rounded-md px-4 py-2 lg:hover:bg-opaque">Welcome</li>
-          <li class="rounded-md px-4 py-2 lg:hover:bg-opaque">Projects</li>
-          <li class="rounded-md px-4 py-2 lg:hover:bg-opaque">Skills</li>
-          <li class="rounded-md px-4 py-2 lg:hover:bg-opaque">Contact</li>
+          {
+            dic.navigation.content.map((item: { name: string; ref: string }) => (
+              <a
+                href={`#${item.ref}`}
+                class="block rounded-md px-4 py-2 lg:hover:bg-opaque"
+              >
+                {item.name}
+              </a>
+            ))
+          }
         </menu>
       </li>
     </article>
   </section>
   <section class="h-min">
-    <p class="py-6 text-xs text-gray-300">© 2024 Jherson Rojas, Developer.</p>
+    <p class="py-6 text-xs text-gray-300">{dic.footer.reference.copy}</p>
   </section>
 </footer>
